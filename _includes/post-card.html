@@ -1,0 +1,18 @@
+{% assign p = include.post %}
+<div class="post-card"
+     data-post-id="{{ p.slug }}"
+     data-category="{{ p.category }}"
+     role="button"
+     tabindex="0"
+     aria-label="Read: {{ p.title }}">
+  <div class="post-card__category">{{ p.category | default: "General" }}</div>
+  <div class="post-card__date">
+    <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %-d, %Y" }}</time>
+  </div>
+  <div class="post-card__title">{{ p.title }}</div>
+  {% if p.excerpt %}
+  <div class="post-card__excerpt">{{ p.excerpt }}</div>
+  {% endif %}
+  <!-- Fallback direct link for no-JS -->
+  <a class="visually-hidden" href="{{ p.url | relative_url }}" tabindex="-1">{{ p.title }}</a>
+</div>

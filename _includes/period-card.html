@@ -1,0 +1,8 @@
+{% assign p = include.period %}
+<a class="period-card" href="{{ p.url | relative_url }}">
+  <div class="period-card__label">{{ p.label }}</div>
+  <div class="period-card__count">{{ p.post_count }} post{% if p.post_count != 1 %}s{% endif %}</div>
+  {% if p.categories and p.categories.size > 0 %}
+  <div class="period-card__categories">{{ p.categories | join: " · " }}</div>
+  {% endif %}
+</a>

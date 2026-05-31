@@ -1,0 +1,48 @@
+title: AegisPub
+tagline: "Cybersecurity · Technology · Society"
+description: "Independent cybersecurity and technology publication."
+url: "https://aegispub.com"
+baseurl: ""
+email: contactaegispub@gmail.com
+
+# Authoring
+author: aegispub
+timezone: America/New_York
+
+# Permalinks
+permalink: /post/:slug/
+
+# Archive plugin
+archive_period: quarterly
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# jekyll-feed
+feed:
+  path: feed.xml
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - vendor/
+
+# Collections
+# Posts are standard Jekyll — no custom collection needed
+
+# Sass
+sass:
+  style: compressed

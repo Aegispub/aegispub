@@ -1,0 +1,62 @@
+<section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        {% for author_entry in site.data.authors %}
+          {% assign author = author_entry[1] %}
+          <div class="colophon__author-name">{{ author.name }}</div>
+          {% if author.bio %}
+          <div class="colophon__author-bio">{{ author.bio }}</div>
+          {% endif %}
+          <div class="colophon__author-links">
+            {% if author.links.twitter %}<a href="{{ author.links.twitter }}" target="_blank" rel="noopener noreferrer">X/Twitter</a>{% endif %}
+            {% if author.links.medium %}<a href="{{ author.links.medium }}" target="_blank" rel="noopener noreferrer">Medium</a>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="{{ '/disclaimer/' | relative_url }}">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="{{ '/privacy/' | relative_url }}">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div class="colophon__social-links">
+          {% if site.data.social.medium %}
+          <a href="{{ site.data.social.medium.url }}" target="_blank" rel="noopener noreferrer">Medium</a>
+          {% endif %}
+          {% if site.data.social.reddit %}
+          <a href="{{ site.data.social.reddit.url }}" target="_blank" rel="noopener noreferrer">Reddit</a>
+          {% endif %}
+          {% if site.data.social.facebook %}
+          <a href="{{ site.data.social.facebook.url }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+          {% endif %}
+          {% if site.data.social.twitter %}
+          <a href="{{ site.data.social.twitter.url }}" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          {% endif %}
+          {% if site.data.social.instagram %}
+          <a href="{{ site.data.social.instagram.url }}" target="_blank" rel="noopener noreferrer">Instagram</a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,143 @@
+/* ============================================================
+   AegisPub — type.css
+   Serif / sans scale · Vertical rhythm · Card title clamp
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Self-hosted fonts
+   Add @font-face rules here once font files are placed in
+   assets/fonts/. Example shown for a hypothetical sans.
+   Georgia (serif) is a web-safe system font — no hosting needed.
+   ---------------------------------------------------------- */
+
+/*
+@font-face {
+  font-family: "PublicSans";
+  src: url("/assets/fonts/PublicSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/assets/fonts/PublicSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* ----------------------------------------------------------
+   Global type scale
+   ---------------------------------------------------------- */
+
+/* Headings — serif */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #1A1A18;
+  line-height: 1.2;
+}
+
+/* Body text — sans */
+body, p, li, td, th, label, input, textarea, select {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ----------------------------------------------------------
+   Masthead wordmark (largest serif element)
+   ---------------------------------------------------------- */
+.masthead__wordmark {
+  /* Tracked wide caps give a newspaper-plate feel */
+  font-variant-numeric: lining-nums;
+}
+
+/* ----------------------------------------------------------
+   Running text rhythm
+   All body prose uses a consistent 1.7 leading at 1rem.
+   Cards and UI elements use tighter leading (1.35–1.45).
+   ---------------------------------------------------------- */
+.post-page__content,
+.prose-page__content,
+.post-panel .post-content {
+  font-size: 1rem;
+  line-height: 1.72;
+  color: #1A1A18;
+}
+
+/* First paragraph — slight optical adjustment */
+.post-page__content > p:first-of-type,
+.post-panel .post-content > p:first-of-type {
+  font-size: 1.05rem;
+}
+
+/* ----------------------------------------------------------
+   Post card title — 2-line clamp
+   Defined in main.css but reinforced here for specificity
+   ---------------------------------------------------------- */
+.post-card__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------
+   Small-caps label utility
+   Used for category names, section headings, platform names
+   ---------------------------------------------------------- */
+.label-caps {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.62rem;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6B6B60;
+}
+
+/* ----------------------------------------------------------
+   Inline code and pre blocks — monospace
+   ---------------------------------------------------------- */
+code, pre, kbd, samp {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88em;
+}
+
+/* ----------------------------------------------------------
+   Blockquote typographic treatment
+   ---------------------------------------------------------- */
+blockquote {
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+/* ----------------------------------------------------------
+   Link hover — consistent underline appearance
+   ---------------------------------------------------------- */
+a:hover {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* ----------------------------------------------------------
+   Responsive type scale adjustments
+   ---------------------------------------------------------- */
+@media (max-width: 767px) {
+  .post-page__title {
+    font-size: 1.6rem;
+  }
+
+  .prose-page__title {
+    font-size: 1.55rem;
+  }
+
+  .post-panel__title {
+    font-size: 1.25rem;
+  }
+}

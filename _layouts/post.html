@@ -1,0 +1,26 @@
+---
+layout: base
+---
+
+<div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      {% if page.category %}
+      <div class="post-page__category">{{ page.category }}</div>
+      {% endif %}
+      <h1 class="post-page__title">{{ page.title }}</h1>
+      <div class="post-page__meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if page.author and site.data.authors[page.author] %}
+          · {{ site.data.authors[page.author].name }}
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      {{ content }}
+    </div>
+
+  </article>
+</div>

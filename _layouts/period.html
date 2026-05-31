@@ -1,0 +1,64 @@
+---
+layout: base
+---
+
+{% assign post_ids_arr = page.posts | map: "slug" %}
+<script>window.AEGIS_POST_IDS = {{ post_ids_arr | jsonify }};</script>
+
+<div class="page-wrap">
+
+  <div class="section-head">
+    <h1 class="section-head__title">{{ page.period_label }}</h1>
+    <p class="section-head__sub">{{ page.posts | size }} post{% if page.posts.size != 1 %}s{% endif %}</p>
+  </div>
+
+  <!-- Post expansion panel -->
+  {% include post-panel.html %}
+
+  <!-- Card grid — all posts in this quarter, no limit -->
+  <div class="card-grid-wrap">
+    <div class="card-grid" id="post-card-grid">
+      {% for post in page.posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Quarter prev/next navigation -->
+  <nav class="period-nav" aria-label="Quarter navigation">
+    {% if page.prev_period %}
+      <a class="period-nav__link" href="{{ page.prev_period.url | relative_url }}">← {{ page.prev_period.label }}</a>
+    {% else %}
+      <span class="period-nav__link period-nav__link--disabled">← Earlier</span>
+    {% endif %}
+
+    <a class="period-nav__link" href="{{ '/archive/' | relative_url }}">All periods</a>
+
+    {% if page.next_period %}
+      <a class="period-nav__link" href="{{ page.next_period.url | relative_url }}">{{ page.next_period.label }} →</a>
+    {% else %}
+      <span class="period-nav__link period-nav__link--disabled">Later →</span>
+    {% endif %}
+  </nav>
+
+</div>
+
+<!-- Hidden pre-rendered post articles for panel.js -->
+<div aria-hidden="true">
+  {% for post in page.posts %}
+  <article class="post-source" id="post-{{ post.slug }}">
+    <div class="post-panel__title">{{ post.title }}</div>
+    <div class="post-panel__meta">
+      <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+      {% if post.category %} · <span>{{ post.category }}</span>{% endif %}
+      {% if post.author and site.data.authors[post.author] %} · <span>{{ site.data.authors[post.author].name }}</span>{% endif %}
+    </div>
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+    <div class="post-panel__permalink">
+      <a href="{{ post.url | relative_url }}">View full post →</a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

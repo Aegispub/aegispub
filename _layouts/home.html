@@ -1,0 +1,51 @@
+---
+layout: base
+---
+
+{% assign posts_30 = site.posts | limit: 30 %}
+{% assign post_ids = "" %}
+{% for post in posts_30 %}{% assign post_ids = post_ids | append: post.slug %}{% unless forloop.last %}{% assign post_ids = post_ids | append: "," %}{% endunless %}{% endfor %}
+
+<script>window.AEGIS_POST_IDS = "{{ post_ids }}".split(",");</script>
+
+<div class="page-wrap">
+
+  <!-- Post expansion panel (sits above grid in DOM) -->
+  {% include post-panel.html %}
+
+  <!-- Card grid -->
+  <div class="card-grid-wrap">
+    <div class="card-grid" id="post-card-grid">
+      {% for post in posts_30 %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<!-- Hidden pre-rendered post articles for panel.js -->
+<div aria-hidden="true">
+  {% for post in posts_30 %}
+  <article class="post-source" id="post-{{ post.slug }}">
+    <div class="post-panel__title">{{ post.title }}</div>
+    <div class="post-panel__meta">
+      <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+      {% if post.category %} · <span>{{ post.category }}</span>{% endif %}
+      {% if post.author and site.data.authors[post.author] %} · <span>{{ site.data.authors[post.author].name }}</span>{% endif %}
+    </div>
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+    <div class="post-panel__permalink">
+      <a href="{{ post.url | relative_url }}">View full post →</a>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+<!-- From the Network strip -->
+{% include social-strip.html %}
+
+<!-- Colophon -->
+

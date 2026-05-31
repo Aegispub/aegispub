@@ -1,0 +1,11 @@
+# _data/authors.yml
+# Keys must match the `author` field in post frontmatter.
+# Add a new entry here for each contributor.
+
+aegispub:
+  name: AegisPub
+  bio: "Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society."
+  links:
+    twitter:  "https://x.com/AegisPub"
+    medium:   "https://medium.com/@AegisPub"
+    facebook: "https://facebook.com/AegisPub"

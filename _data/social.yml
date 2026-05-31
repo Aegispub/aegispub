@@ -1,0 +1,42 @@
+# _data/social.yml
+# One entry per platform.
+# posts: []        → single-line follow link shown in the Network strip
+# posts: [- ...]   → full card shown (title, excerpt, date, link)
+#
+# To add a post: add an entry under posts: with title, excerpt, date, url.
+# To revert to follow link: clear the posts array back to []
+
+medium:
+  name: Medium
+  handle: "@AegisPub"
+  url: "https://medium.com/@AegisPub"
+  posts: []
+  # posts:
+  #   - title:   "Post title here"
+  #     excerpt: "One or two sentences for the card."
+  #     date:    "2026-03-10"
+  #     url:     "https://medium.com/@AegisPub/your-post-slug"
+
+reddit:
+  name: Reddit
+  handle: "r/AegisPub"
+  url: "https://reddit.com/r/AegisPub"
+  posts: []
+
+facebook:
+  name: Facebook
+  handle: "AegisPub"
+  url: "https://facebook.com/AegisPub"
+  posts: []
+
+twitter:
+  name: X / Twitter
+  handle: "@AegisPub"
+  url: "https://x.com/AegisPub"
+  posts: []
+
+instagram:
+  name: Instagram
+  handle: "@AegisPub"
+  url: "https://instagram.com/AegisPub"
+  posts: []

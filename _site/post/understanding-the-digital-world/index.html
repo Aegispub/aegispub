@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding the Digital World · AegisPub</title>
+  <meta name="description" content="An introduction to how the digital world is structured — and why that structure matters for security, privacy, and power.">
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Understanding the Digital World | AegisPub</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Understanding the Digital World" />
+<meta name="author" content="AegisPub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An introduction to how the digital world is structured — and why that structure matters for security, privacy, and power." />
+<meta name="twitter:description" property="og:description" content="An introduction to how the digital world is structured — and why that structure matters for security, privacy, and power." />
+<link rel="canonical" href="http://localhost:4000/post/understanding-the-digital-world/" />
+<meta property="og:url" content="http://localhost:4000/post/understanding-the-digital-world/" />
+<meta property="og:site_name" content="AegisPub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-07T00:00:00-04:00" />
+<meta property="article:modified_time" content="2024-10-07T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Understanding the Digital World" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AegisPub"},"dateModified":"2024-10-07T00:00:00-04:00","datePublished":"2024-10-07T00:00:00-04:00","description":"An introduction to how the digital world is structured — and why that structure matters for security, privacy, and power.","headline":"Understanding the Digital World","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/post/understanding-the-digital-world/"},"url":"http://localhost:4000/post/understanding-the-digital-world/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/type.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="AegisPub RSS Feed" href="/feed.xml">
+
+  <!-- Post ID array for panel.js prev/next (injected per-layout when needed) -->
+  
+</head>
+<body>
+
+  <header class="masthead" role="banner">
+  <div class="page-wrap">
+    <a href="/" style="text-decoration:none;">
+      <img src="/assets/img/logo.png" alt="AegisPub" height="42" style="height:42px; width:auto; display:inline-block; vertical-align:middle; margin-bottom:8px;>
+      <div class="masthead__wordmark">AegisPub</div>
+    </a>
+    <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
+    <div class="masthead__dateline">Sunday, May 31, 2026</div>
+  </div>
+</header>
+
+  <nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="/"
+         >Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/archive/"
+         >Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/about/"
+         >About</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main-content">
+    <div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      
+      <div class="post-page__category">Technology & Society</div>
+      
+      <h1 class="post-page__title">Understanding the Digital World</h1>
+      <div class="post-page__meta">
+        <time datetime="2024-10-07T00:00:00-04:00">October 7, 2024</time>
+        
+          · AegisPub
+        
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      <p>The digital world is not a neutral medium. It is built infrastructure, shaped by decisions made decades ago, governed by institutions most people have never heard of, and contested by interests that are rarely aligned with the individual user.</p>
+
+<p>Understanding it begins with understanding its layers.</p>
+
+<h2 id="the-physical-layer">The Physical Layer</h2>
+
+<p>At the foundation is hardware — the fibre cables under oceans, the data centres in industrial parks, the cell towers on rooftops. This layer is owned. Predominantly by a small number of telecommunications companies and, increasingly, by hyperscalers like Amazon, Google, and Microsoft who have built private backbone networks at scale.</p>
+
+<p>The physical layer is where surveillance is easiest and most consequential. Intelligence agencies have long understood that tapping fibre is more efficient than compromising individual devices.</p>
+
+<h2 id="the-protocol-layer">The Protocol Layer</h2>
+
+<p>Above the physical sits the protocol layer — TCP/IP, DNS, BGP, TLS. These are the agreements that allow different networks to interoperate. They were designed for a smaller, more trusted internet and carry the assumptions of that era.</p>
+
+<p>BGP hijacking — where a network announces false routing information to redirect traffic — is still possible because BGP was designed in a world where backbone operators were assumed to be trusted. RPKI is slowly addressing this, but adoption is incomplete.</p>
+
+<p>DNS, the internet’s address book, remains a centralised dependency. A small number of root servers and a handful of major resolvers handle a vast fraction of global DNS traffic. This is both an efficiency and a vulnerability.</p>
+
+<h2 id="the-application-layer">The Application Layer</h2>
+
+<p>This is where most people live — browsers, apps, social platforms, messaging services. It is also where the business models that fund the infrastructure are located, and where data collection is most intensive.</p>
+
+<p>The application layer is where the tradeoffs between convenience, privacy, and security are most visible and most contested. End-to-end encryption sits here. So does dark pattern design. So does the attention economy.</p>
+
+<h2 id="why-it-matters">Why It Matters</h2>
+
+<p>Cybersecurity is not just a technical discipline. It is a practice that operates across all three layers simultaneously. A phishing attack operates at the application layer but succeeds because of human factors. A nation-state intrusion may traverse the protocol layer but pivot through application-layer credentials.</p>
+
+<p>Literacy about these layers is not optional for anyone working in technology, policy, or any field that intersects with digital infrastructure — which, in 2024, is most fields.</p>
+
+    </div>
+
+  </article>
+</div>
+
+  </main>
+
+  <section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        
+          
+          <div class="colophon__author-name">AegisPub</div>
+          
+          <div class="colophon__author-bio">Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society.</div>
+          
+          <div class="colophon__author-links">
+            <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+            <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          </div>
+        
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="/disclaimer/">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="/privacy/">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:contactaegispub@gmail.com">contactaegispub@gmail.com</a>
+        </div>
+        <div class="colophon__social-links">
+          
+          <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          
+          
+          <a href="https://reddit.com/r/AegisPub" target="_blank" rel="noopener noreferrer">Reddit</a>
+          
+          
+          <a href="https://facebook.com/AegisPub" target="_blank" rel="noopener noreferrer">Facebook</a>
+          
+          
+          <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          
+          
+          <a href="https://instagram.com/AegisPub" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; 2026 AegisPub · <a href="/privacy/" style="color:inherit;">Privacy</a> · <a href="/disclaimer/" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+  <!-- panel.js — deferred, does not block render -->
+  <script src="/assets/js/panel.js" defer></script>
+
+</body>
+</html>

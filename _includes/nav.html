@@ -1,0 +1,17 @@
+<nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="{{ '/' | relative_url }}"
+         {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="{{ '/archive/' | relative_url }}"
+         {% if page.url contains '/archive' %}aria-current="page"{% endif %}>Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="{{ '/about/' | relative_url }}"
+         {% if page.url contains '/about' %}aria-current="page"{% endif %}>About</a>
+    </div>
+  </div>
+</nav>

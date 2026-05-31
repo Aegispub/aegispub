@@ -1,0 +1,21 @@
+<footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/archive/' | relative_url }}">Archive</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; {{ site.time | date: "%Y" }} AegisPub · <a href="{{ '/privacy/' | relative_url }}" style="color:inherit;">Privacy</a> · <a href="{{ '/disclaimer/' | relative_url }}" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+  </div>
+</footer>

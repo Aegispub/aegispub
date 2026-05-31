@@ -1,0 +1,33 @@
+<section class="network-strip" aria-label="From the Network">
+  <div class="page-wrap">
+    <div class="network-strip__heading">From the Network</div>
+    <div class="network-grid">
+      {% assign platforms = site.data.social %}
+      {% for platform_entry in platforms %}
+        {% assign key = platform_entry[0] %}
+        {% assign platform = platform_entry[1] %}
+        {% if platform.posts and platform.posts.size > 0 %}
+          {% assign post = platform.posts[0] %}
+          <div class="social-cell">
+            <div class="social-cell__platform">{{ platform.name }}</div>
+            <div class="social-cell__title">{{ post.title }}</div>
+            {% if post.excerpt %}
+            <div class="social-cell__excerpt">{{ post.excerpt }}</div>
+            {% endif %}
+            <div class="social-cell__footer">
+              <span class="social-cell__date">{{ post.date }}</span>
+              <a class="social-cell__link" href="{{ post.url }}" target="_blank" rel="noopener noreferrer">Read →</a>
+            </div>
+          </div>
+        {% else %}
+          <div class="social-cell social-cell--empty">
+            <div class="social-cell__follow">
+              Follow us on <a href="{{ platform.url }}" target="_blank" rel="noopener noreferrer">{{ platform.name }}</a>
+              {% if platform.handle %}<br><span style="font-size:0.68rem;color:var(--c-muted)">{{ platform.handle }}</span>{% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
