@@ -46,3 +46,8 @@ exclude:
 # Sass
 sass:
   style: compressed
+
+# Content copyright
+author:
+  name: AegisPub
+  email: contactaegispub@gmail.com
