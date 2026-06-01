@@ -2,7 +2,7 @@ title: AegisPub
 tagline: "Cybersecurity · Technology · Society"
 description: "Independent cybersecurity and technology publication."
 url: "https://aegispub.com"
-baseurl: "/aegispub"
+baseurl: ""
 email: contactaegispub@gmail.com
 
 # Authoring
