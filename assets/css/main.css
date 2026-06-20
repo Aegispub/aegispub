@@ -110,7 +110,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .masthead__brand {
-  display: flex;
+  // display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
