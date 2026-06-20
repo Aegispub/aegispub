@@ -109,6 +109,19 @@ img { max-width: 100%; height: auto; display: block; }
   margin-top: 3px;
 }
 
+.masthead__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.masthead__logo {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
 /* ----------------------------------------------------------
    Navigation strip
    ---------------------------------------------------------- */
