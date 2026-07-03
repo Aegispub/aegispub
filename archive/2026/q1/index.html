@@ -48,7 +48,7 @@
       <div class="masthead__wordmark">AegisPub</div>
     </a>
     <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
-    <div class="masthead__dateline">Saturday, June 20, 2026</div>
+    <div class="masthead__dateline">Friday, July 3, 2026</div>
   </div>
 </header>
 
@@ -73,13 +73,13 @@
 
   <main id="main-content">
     
-<script>window.AEGIS_POST_IDS = ["key-organizations-within-our-digital-space"];</script>
+<script>window.AEGIS_POST_IDS = ["key-organizations-within-our-digital-space","alert-fatigue-the-security-problem-created-by-too-much-security","the-hidden-cost-of-every-security-tool","why-are-we-secure-is-the-wrong-question"];</script>
 
 <div class="page-wrap">
 
   <div class="section-head">
     <h1 class="section-head__title">Q1 2026</h1>
-    <p class="section-head__sub">1 post</p>
+    <p class="section-head__sub">4 posts</p>
   </div>
 
   <!-- Post expansion panel -->
@@ -116,6 +116,66 @@
   
   <!-- Fallback direct link for no-JS -->
   <a class="visually-hidden" href="/post/key-organizations-within-our-digital-space/" tabindex="-1">Key Organizations Within Our Digital Space</a>
+</div>
+
+      
+        
+<div class="post-card"
+     data-post-id="alert-fatigue-the-security-problem-created-by-too-much-security"
+     data-category="Research & Analysis"
+     role="button"
+     tabindex="0"
+     aria-label="Read: Alert Fatigue: The Security Problem That's Created by Too Much Security">
+  <div class="post-card__category">Research & Analysis</div>
+  <div class="post-card__date">
+    <time datetime="2026-01-23T00:00:00-05:00">Jan 23, 2026</time>
+  </div>
+  <div class="post-card__title">Alert Fatigue: The Security Problem That's Created by Too Much Security</div>
+  
+  <div class="post-card__excerpt">More alerts don't mean better security. Here's how alert fatigue causes real incidents to be missed — and how to tune monitoring so it actually gets watched.</div>
+  
+  <!-- Fallback direct link for no-JS -->
+  <a class="visually-hidden" href="/post/alert-fatigue-the-security-problem-created-by-too-much-security/" tabindex="-1">Alert Fatigue: The Security Problem That's Created by Too Much Security</a>
+</div>
+
+      
+        
+<div class="post-card"
+     data-post-id="the-hidden-cost-of-every-security-tool"
+     data-category="Technology & Society"
+     role="button"
+     tabindex="0"
+     aria-label="Read: The Hidden Cost of Every Security Tool: What Nobody Tells You Before You Buy">
+  <div class="post-card__category">Technology & Society</div>
+  <div class="post-card__date">
+    <time datetime="2026-01-14T00:00:00-05:00">Jan 14, 2026</time>
+  </div>
+  <div class="post-card__title">The Hidden Cost of Every Security Tool: What Nobody Tells You Before You Buy</div>
+  
+  <div class="post-card__excerpt">Security tools are sold on what they prevent. Here's what the marketing leaves out — the operational, financial, and human costs of running them.</div>
+  
+  <!-- Fallback direct link for no-JS -->
+  <a class="visually-hidden" href="/post/the-hidden-cost-of-every-security-tool/" tabindex="-1">The Hidden Cost of Every Security Tool: What Nobody Tells You Before You Buy</a>
+</div>
+
+      
+        
+<div class="post-card"
+     data-post-id="why-are-we-secure-is-the-wrong-question"
+     data-category="Cybersecurity Insights"
+     role="button"
+     tabindex="0"
+     aria-label="Read: Why 'Are We Secure?' Is the Wrong Question — and What to Ask Instead">
+  <div class="post-card__category">Cybersecurity Insights</div>
+  <div class="post-card__date">
+    <time datetime="2026-01-05T00:00:00-05:00">Jan 5, 2026</time>
+  </div>
+  <div class="post-card__title">Why 'Are We Secure?' Is the Wrong Question — and What to Ask Instead</div>
+  
+  <div class="post-card__excerpt">Security isn't a yes-or-no state — it's a set of trade-offs. Here's the better question to ask, and a practical framework for answering it.</div>
+  
+  <!-- Fallback direct link for no-JS -->
+  <a class="visually-hidden" href="/post/why-are-we-secure-is-the-wrong-question/" tabindex="-1">Why 'Are We Secure?' Is the Wrong Question — and What to Ask Instead</a>
 </div>
 
       
@@ -177,6 +237,230 @@
     </div>
     <div class="post-panel__permalink">
       <a href="/post/key-organizations-within-our-digital-space/">View full post →</a>
+    </div>
+  </article>
+  
+  <article class="post-source" id="post-alert-fatigue-the-security-problem-created-by-too-much-security">
+    <div class="post-panel__title">Alert Fatigue: The Security Problem That's Created by Too Much Security</div>
+    <div class="post-panel__meta">
+      <span>January 23, 2026</span>
+       · <span>Research & Analysis</span>
+       · <span>AegisPub</span>
+    </div>
+    <div class="post-content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>There’s a counterintuitive failure mode in cybersecurity that costs organisations dearly, and it isn’t caused by a lack of protection. It’s caused by too much noise in the wrong places.</p>
+
+<p>Alert fatigue is what happens when the volume of security notifications overwhelms the people responsible for reviewing them. When a critical threat signal — a compromised account, an unusual data access pattern, a known malicious connection — sits unaddressed because it was buried in a queue of thousands of lower-priority notifications.</p>
+
+<p>It’s a problem created by security systems. And understanding it leads to a broader lesson about what effective protection actually looks like.</p>
+
+<h2 id="how-alert-fatigue-develops">How alert fatigue develops</h2>
+
+<p>Security monitoring tools are generally designed to detect anomalies — things that differ from normal behaviour. The challenge is that in a live environment, a lot of things are constantly slightly unusual.</p>
+
+<p>A vulnerability scanner running its scheduled tests will trigger login-failure alerts on every system it tests, because scanning tools test for weak credentials as part of their job. In an organisation with hundreds of systems, that can generate thousands of alerts per day from a single, completely benign, scheduled process.</p>
+
+<p>Without configuration to account for this, those alerts pile into the same queue as alerts generated by actual suspicious activity. An analyst reviewing that queue faces an impossible cognitive challenge: determine which of these thousands of notifications represents a genuine threat, without missing it and without burning hours on false positives.</p>
+
+<p>The realistic outcome is that analysts develop heuristics for rapid triage. Certain alert types get deprioritised. Processing speed increases at the expense of investigation depth. And eventually, a genuine incident sits in the queue for hours — or longer — before anyone looks at it properly.</p>
+
+<p>In documented incident reviews, alert fatigue is identified as a contributing factor in a significant proportion of breach cases. Not because the alert wasn’t fired. But because nobody responded to it in time.</p>
+
+<h2 id="the-trade-off-at-the-heart-of-the-problem">The trade-off at the heart of the problem</h2>
+
+<p>Alert fatigue is a direct consequence of a specific trade-off: maximising detection coverage versus managing analyst attention.</p>
+
+<p>A security monitoring setup calibrated to catch everything will fire alerts constantly. Most of them will be benign. Some of them will be critical. The analysts responsible for reviewing them cannot sustainably differentiate at the volume generated.</p>
+
+<p>A setup calibrated to reduce noise will fire fewer alerts. More of them will be meaningful. But the calibration decisions — choosing which signals to suppress — carry real risk. Every suppressed alert category is a category you’ve accepted you won’t detect automatically. If an attacker’s behaviour mimics a suppressed category, or if the suppression is applied too broadly, you’ve created a blind spot.</p>
+
+<p>The discipline is precision tuning. Understanding which alert categories are generating what proportion of volume. Knowing the historical rate of true positives within each category. Making suppression decisions that are specific, documented, and regularly reviewed — not broad strokes applied for the sake of quiet.</p>
+
+<h2 id="what-good-monitoring-looks-like-in-practice">What good monitoring looks like in practice</h2>
+
+<p>Effective security monitoring starts with understanding your environment well enough to know what normal looks like. What systems communicate with what. What times users typically access what resources. What volumes of data transfers are routine.</p>
+
+<p>Against that baseline, anomalies become meaningful. A user accessing the finance system at 3am from an unfamiliar device isn’t routine. A large outbound file transfer to an unknown external address isn’t routine. These are the signals worth detecting — not because they’re definitely attacks, but because they’re worth investigating.</p>
+
+<p>The practical goal is a monitoring setup that generates a manageable volume of alerts, each with enough context to allow quick triage, and where the analyst knows that reviewing the queue thoroughly is achievable.</p>
+
+<p>For organisations without a dedicated security team, this principle applies even to simple tools. Email filtering that blocks obvious phishing is worth having. A rule that alerts you when someone logs into your business accounts from an unrecognised country is worth having. A notification when large amounts of data are downloaded from a cloud storage system is worth having.</p>
+
+<p>These are small, specific, high-signal notifications. They won’t catch everything. But they will catch the most common and most damaging categories of attack — and they’ll produce alerts that you can actually respond to.</p>
+
+<h2 id="the-tuning-process">The tuning process</h2>
+
+<p>Reducing alert fatigue without reducing meaningful detection requires an ongoing process.</p>
+
+<p>First, categorise your alert volume. Which rules or alert types account for the bulk of notifications? What proportion of those have historically indicated a real issue?</p>
+
+<p>Second, identify the tuning opportunity. Is the alert volume coming from a threshold that’s calibrated too loosely? From a rule that doesn’t account for a known benign behaviour in your environment? From a source that reliably generates noise?</p>
+
+<p>Third, make specific suppression decisions. Not “suppress all alerts from this system” — that creates a blind spot. “Suppress login-failure alerts from the scanner’s IP range, specifically for the login-failure rule, and only during scheduled scanning windows.” Narrow. Targeted. Documented.</p>
+
+<p>Fourth, set a review cadence. Suppression decisions decay. The environment changes. What was safe to suppress six months ago may not be safe to suppress now. Quarterly review of tuning decisions is a reasonable minimum.</p>
+
+<h2 id="what-this-means-for-non-technical-readers">What this means for non-technical readers</h2>
+
+<p>If you’re responsible for any kind of digital security — even at the level of a small business using cloud tools — the principle translates directly.</p>
+
+<p>The goal is not to receive every possible notification from every tool. The goal is to receive the notifications that require your attention and are actionable when you receive them. A constant stream of low-priority alerts that you’ve learned to ignore is worse than a quiet system, because it trains you to dismiss the queue — including the critical signals buried within it.</p>
+
+<p>Review the alerts you’re currently receiving. Ask honestly: how many of these do you act on? How many do you dismiss without reading? The ones you’re dismissing are either misconfigured (and should be tuned) or genuinely low-priority (and should be suppressed).</p>
+
+<p>The ones that remain are your actual monitoring posture. Make sure they include the signals that matter most for your specific situation.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Alert fatigue is a reminder that more is not always better in security. A monitoring setup that generates signal faster than it can be processed is not a protection mechanism — it’s a system for hiding critical information in noise.</p>
+
+<p>The goal is calibrated, sustainable detection: a setup that surfaces what matters, allows it to be acted on, and is reviewed regularly enough to stay meaningful as the environment evolves.</p>
+
+<p>That requires discipline and ongoing attention. But it produces something that comprehensive-but-ignored monitoring never can: a team that is actually watching, and actually responding, when something important happens.</p>
+
+    </div>
+    <div class="post-panel__permalink">
+      <a href="/post/alert-fatigue-the-security-problem-created-by-too-much-security/">View full post →</a>
+    </div>
+  </article>
+  
+  <article class="post-source" id="post-the-hidden-cost-of-every-security-tool">
+    <div class="post-panel__title">The Hidden Cost of Every Security Tool: What Nobody Tells You Before You Buy</div>
+    <div class="post-panel__meta">
+      <span>January 14, 2026</span>
+       · <span>Technology & Society</span>
+       · <span>AegisPub</span>
+    </div>
+    <div class="post-content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>The cybersecurity industry is very good at telling you what its tools do. The marketing is compelling: this firewall will inspect every packet that enters your network. This endpoint solution will detect malware before it executes. This monitoring platform will correlate events across your entire environment and alert you to threats.</p>
+
+<p>What the marketing is less forthcoming about is what each of those tools costs beyond the licence fee — the operational overhead, the user experience impact, and the risks that emerge from deploying them incorrectly.</p>
+
+<p>Understanding a security tool means understanding its trade-offs. Not as a reason to avoid using it, but as the foundation for using it well.</p>
+
+<h2 id="multi-factor-authentication-the-trade-off-between-security-and-friction">Multi-factor authentication: the trade-off between security and friction</h2>
+
+<p>Multi-factor authentication — requiring a second verification step in addition to a password — is one of the most impactful security controls available. A hardware key that generates cryptographic authentication tied to a specific device cannot be phished. It cannot be intercepted in transit. It is a significant upgrade over passwords alone.</p>
+
+<p>The trade-off is operational. Every new employee needs a key. Lost keys need to be revoked and replaced. Devices that don’t support the connection method require workarounds. Users who find the step annoying will look for ways around it — and if they find them, the control becomes security theatre.</p>
+
+<p>Implementation matters as much as the control itself. MFA rolled out without user training and clear support channels will generate helpdesk calls and resentment. The same control deployed with clear communication about why it exists, what to do if it doesn’t work, and a well-supported recovery process becomes part of normal workflow within weeks.</p>
+
+<p>The lesson: don’t evaluate a control only by what it prevents. Evaluate it by what it costs to operate sustainably.</p>
+
+<h2 id="firewalls-with-deep-packet-inspection-when-protection-becomes-a-bottleneck">Firewalls with deep packet inspection: when protection becomes a bottleneck</h2>
+
+<p>A next-generation firewall with deep packet inspection enabled gives security teams extraordinary visibility. Every piece of traffic crossing a network boundary can be examined for malicious content, policy violations, and application-layer anomalies. For most organisations, this is a sensible investment.</p>
+
+<p>For some, it’s an architectural problem. Deep packet inspection takes time. For the vast majority of applications, the latency is imperceptible. For environments where performance is critical — real-time processing systems, time-sensitive communications infrastructure — the delay compounds into something that damages business operations.</p>
+
+<p>This isn’t a hypothetical concern. It’s a genuine architectural decision that needs to be made with full awareness of the performance impact in your specific environment. The security that protects most organisations can genuinely harm others if deployed without that understanding.</p>
+
+<p>The practical question to ask before deploying any inspection-intensive tool: what does this do to the performance of the systems it sits in front of, and can our operations absorb that?</p>
+
+<h2 id="siem-and-logging-when-coverage-becomes-unaffordable">SIEM and logging: when coverage becomes unaffordable</h2>
+
+<p>Security Information and Event Management platforms — SIEMs — are powerful tools for detecting threats that no single system would catch alone. They ingest log data from across an entire technology environment, correlate events, and surface patterns that indicate something suspicious is happening.</p>
+
+<p>The trade-off is cost and signal quality. Cloud-based SIEMs charge by the volume of data ingested. Organisations that enable comprehensive logging — which is exactly what good security practice requires — face costs that scale quickly. The business decision of what to log and what to suppress is not purely technical. It’s a financial negotiation.</p>
+
+<p>And every log source you decide is too expensive to ingest is a blind spot you’ve accepted. If something happens in that part of your environment, you won’t have the data to understand what occurred.</p>
+
+<p>For small businesses, the lesson isn’t that comprehensive logging is always necessary. It’s that the decision about what to monitor should be made deliberately, with an explicit understanding of what you’re giving up visibility on when you choose not to log something.</p>
+
+<h2 id="data-loss-prevention-when-the-cure-creates-worse-symptoms-than-the-disease">Data Loss Prevention: when the cure creates worse symptoms than the disease</h2>
+
+<p>Data Loss Prevention tools are designed to prevent sensitive information from leaving the organisation. They watch outbound email, file transfers, and cloud uploads. When they work correctly, they catch an employee accidentally sending customer data to the wrong address.</p>
+
+<p>When they’re misconfigured or calibrated too aggressively, they block a sales person from sending a proposal to a client. They stop an engineer from uploading code to a shared repository. Every false positive erodes confidence in the tool. People learn to work around it. The control that was supposed to protect the organisation creates shadow behaviour — sensitive activities moved to channels outside company oversight.</p>
+
+<p>The discipline required is tuning: understanding the difference between genuine data loss risk and legitimate business activity in your specific environment. That tuning takes time, domain knowledge, and ongoing adjustment. A DLP tool deployed and left to run without maintenance degrades from a protection mechanism into a source of operational friction.</p>
+
+<h2 id="the-pattern-across-every-tool">The pattern across every tool</h2>
+
+<p>The pattern is consistent. Every security tool makes a trade. What it gives you is protection, visibility, or detection capability in a specific area. What it costs includes money, operational complexity, performance impact, and the human experience of the people who have to work with it or around it.</p>
+
+<p>Understanding those costs doesn’t mean choosing less protection. It means choosing the right tools for your specific environment, deploying them with the operational reality in mind, and maintaining them with the attention they require.</p>
+
+<p>The organisations that use security tools well aren’t the ones with the longest list of deployed products. They’re the ones that understand what each tool actually does in their environment, what it costs to operate, and what they’ve accepted by deploying it.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Before implementing any security tool, add these questions to your evaluation process. What does this cost beyond the licence? What does it do to user experience? What happens if it’s misconfigured? Who is responsible for maintaining it, and do they have the time? What risks remain even after it’s deployed?</p>
+
+<p>Answering those questions before you deploy — rather than discovering them after — is the difference between a tool that strengthens your security posture and one that creates an expensive illusion of it.</p>
+
+    </div>
+    <div class="post-panel__permalink">
+      <a href="/post/the-hidden-cost-of-every-security-tool/">View full post →</a>
+    </div>
+  </article>
+  
+  <article class="post-source" id="post-why-are-we-secure-is-the-wrong-question">
+    <div class="post-panel__title">Why 'Are We Secure?' Is the Wrong Question — and What to Ask Instead</div>
+    <div class="post-panel__meta">
+      <span>January 5, 2026</span>
+       · <span>Cybersecurity Insights</span>
+       · <span>AegisPub</span>
+    </div>
+    <div class="post-content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>Most conversations about cybersecurity start with the wrong question. Business owners ask their IT staff whether they’re secure. Employees assume the company’s security team has things covered. Everyone hopes the answer is yes.</p>
+
+<p>The problem with that question isn’t the intent behind it. The problem is that “yes” or “no” are both misleading answers. Security doesn’t work that way — and the sooner we understand why, the better decisions we’ll all make.</p>
+
+<h2 id="what-security-actually-is">What security actually is</h2>
+
+<p>Security is not a state you achieve. It’s a set of trade-offs you manage. Every measure you put in place costs something — money, time, operational efficiency, or user experience. Every risk you don’t address represents an exposure you’re choosing to live with, whether or not you’ve thought about that choice explicitly.</p>
+
+<p>Consider the analogy of physical security for a shop. You can install a lock on the door. You can add a deadbolt. You can install a camera system. You can hire overnight security. You can build a concrete vault for your most valuable stock. Each of those measures costs something, and each one reduces a different category of risk by a different amount. Nobody installs all of them. You make a judgment about which risks are worth which costs — based on what you’re protecting, who might target it, and what you can afford.</p>
+
+<p>Digital security works identically. The controls exist on a spectrum from basic to sophisticated. The question is never “have we done everything?” — because everything is infinite. The question is: “Have we done the right things for our specific situation?”</p>
+
+<h2 id="the-four-responses-to-any-risk">The four responses to any risk</h2>
+
+<p>When a risk is identified, there are four things you can do with it. Understanding these options changes how you approach security decisions.</p>
+
+<p>The first option is to <strong>avoid</strong> the risk. This means eliminating the activity that creates it. If a small business doesn’t store customer payment card information — routing all transactions through a payment processor instead — they’ve eliminated the risk of that data being stolen. The trade-off is the flexibility they’ve given up. But for many small businesses, that’s an excellent trade.</p>
+
+<p>The second option is to <strong>mitigate</strong> the risk. This means reducing its likelihood or its impact through a control. Two-factor authentication makes it much harder for an attacker to access an account even if they steal a password. Regular backups mean that a ransomware attack doesn’t have to be catastrophic. These controls cost money and time to implement and maintain, but they reduce real risks significantly.</p>
+
+<p>The third option is to <strong>transfer</strong> the risk. Cyber insurance is the clearest example. The financial consequence of an incident is shifted to the insurer, in exchange for a premium. This doesn’t reduce the likelihood of an incident — it just helps cover costs if one occurs. The critical thing to understand is that insurance policies contain exclusions. Losses caused by negligence, unpatched software, or shared credentials may not be covered. Read the policy before relying on it.</p>
+
+<p>The fourth option is to <strong>accept</strong> the risk. This means evaluating the cost of treating a risk and deciding the treatment costs more than the risk itself is worth. For small risks, this is often the right call. But acceptance only counts as a decision if it’s made deliberately, documented, and reviewed when circumstances change. A risk that nobody knew about, or that someone chose to ignore without documenting it, is not acceptance — it’s a gap waiting to be exploited.</p>
+
+<h2 id="why-are-we-secure-produces-the-wrong-thinking">Why “are we secure?” produces the wrong thinking</h2>
+
+<p>The problem with the binary question is that it encourages binary thinking. It leads organisations to check boxes — deploy antivirus, configure a firewall, require password complexity — and consider themselves covered. It discourages the ongoing, contextual judgment that security actually requires.</p>
+
+<p>The right question has three parts. What are the risks that matter most to us, given what we do and what we protect? What trade-offs have we made to address those risks? And are those trade-offs still appropriate given how our business and the threat environment have changed?</p>
+
+<p>None of those questions have permanent answers. The business adds a new service and the risk profile changes. An employee leaves with access credentials that haven’t been revoked. A supplier gets breached and the attackers use that access to reach your systems. Security requires continuous review — not because you failed initially, but because the world keeps changing.</p>
+
+<h2 id="a-practical-starting-point-for-non-technical-users-and-small-businesses">A practical starting point for non-technical users and small businesses</h2>
+
+<p>You don’t need a security team or a large budget to start asking better questions. Here’s a simple framework.</p>
+
+<p>Make a short list of the things that would genuinely damage your business or personal life if they were lost, stolen, or made public. Customer data. Financial records. Business email access. Employee information. That list is your priority.</p>
+
+<p>For each item on that list, ask: What happens if this is compromised? How likely is that, based on what you know about common threats? And what have you done — or what could you do — to reduce that likelihood or limit the damage if it happens?</p>
+
+<p>You don’t need to address everything at once. You need to understand your situation well enough to make deliberate choices. That deliberateness is what separates organisations that manage security well from those who discover their gaps during an incident.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The shift from “are we secure?” to “what trade-offs have we made, and are they right?” is a small change in language that represents a significant change in thinking. It replaces passive assumption with active judgment. It acknowledges that security is a resource allocation problem, not a technical checkbox. And it creates the ongoing review cycle that real protection requires.</p>
+
+<p>Start with the right question. Everything else builds from there.</p>
+
+    </div>
+    <div class="post-panel__permalink">
+      <a href="/post/why-are-we-secure-is-the-wrong-question/">View full post →</a>
     </div>
   </article>
   

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Fatigue: The Security Problem That's Created by Too Much Security · AegisPub</title>
+  <meta name="description" content="More alerts don't mean better security. Here's how alert fatigue causes real incidents to be missed — and how to tune monitoring so it actually gets watched.">
+  <meta name="copyright" content="AegisPub. All rights reserved.">
+  <meta name="author" content="AegisPub">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Alert Fatigue: The Security Problem That’s Created by Too Much Security | AegisPub</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Alert Fatigue: The Security Problem That’s Created by Too Much Security" />
+<meta name="author" content="AegisPub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="More alerts don’t mean better security. Here’s how alert fatigue causes real incidents to be missed — and how to tune monitoring so it actually gets watched." />
+<meta name="twitter:description" property="og:description" content="More alerts don’t mean better security. Here’s how alert fatigue causes real incidents to be missed — and how to tune monitoring so it actually gets watched." />
+<link rel="canonical" href="https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/" />
+<meta property="og:url" content="https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/" />
+<meta property="og:site_name" content="AegisPub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-01-23T00:00:00-05:00" />
+<meta property="article:modified_time" content="2026-01-23T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Alert Fatigue: The Security Problem That’s Created by Too Much Security" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AegisPub"},"dateModified":"2026-01-23T00:00:00-05:00","datePublished":"2026-01-23T00:00:00-05:00","description":"More alerts don’t mean better security. Here’s how alert fatigue causes real incidents to be missed — and how to tune monitoring so it actually gets watched.","headline":"Alert Fatigue: The Security Problem That’s Created by Too Much Security","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/"},"url":"https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/type.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="AegisPub RSS Feed" href="/feed.xml">
+
+  <!-- Post ID array for panel.js prev/next (injected per-layout when needed) -->
+  
+</head>
+<body>
+
+  <header class="masthead" role="banner">
+  <div class="page-wrap">
+    <a href="/" style="text-decoration:none;">
+      <img src="/assets/img/logo.png" alt="AegisPub" style="height:64px; width:auto; display:inline-block; vertical-align:center; margin-bottom:8px;">
+      <div class="masthead__wordmark">AegisPub</div>
+    </a>
+    <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
+    <div class="masthead__dateline">Friday, July 3, 2026</div>
+  </div>
+</header>
+
+  <nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="/"
+         >Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/archive/"
+         >Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/about/"
+         >About</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main-content">
+    <div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      
+      <div class="post-page__category">Research & Analysis</div>
+      
+      <h1 class="post-page__title">Alert Fatigue: The Security Problem That's Created by Too Much Security</h1>
+      <div class="post-page__meta">
+        <time datetime="2026-01-23T00:00:00-05:00">January 23, 2026</time>
+        
+          · AegisPub
+        
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>There’s a counterintuitive failure mode in cybersecurity that costs organisations dearly, and it isn’t caused by a lack of protection. It’s caused by too much noise in the wrong places.</p>
+
+<p>Alert fatigue is what happens when the volume of security notifications overwhelms the people responsible for reviewing them. When a critical threat signal — a compromised account, an unusual data access pattern, a known malicious connection — sits unaddressed because it was buried in a queue of thousands of lower-priority notifications.</p>
+
+<p>It’s a problem created by security systems. And understanding it leads to a broader lesson about what effective protection actually looks like.</p>
+
+<h2 id="how-alert-fatigue-develops">How alert fatigue develops</h2>
+
+<p>Security monitoring tools are generally designed to detect anomalies — things that differ from normal behaviour. The challenge is that in a live environment, a lot of things are constantly slightly unusual.</p>
+
+<p>A vulnerability scanner running its scheduled tests will trigger login-failure alerts on every system it tests, because scanning tools test for weak credentials as part of their job. In an organisation with hundreds of systems, that can generate thousands of alerts per day from a single, completely benign, scheduled process.</p>
+
+<p>Without configuration to account for this, those alerts pile into the same queue as alerts generated by actual suspicious activity. An analyst reviewing that queue faces an impossible cognitive challenge: determine which of these thousands of notifications represents a genuine threat, without missing it and without burning hours on false positives.</p>
+
+<p>The realistic outcome is that analysts develop heuristics for rapid triage. Certain alert types get deprioritised. Processing speed increases at the expense of investigation depth. And eventually, a genuine incident sits in the queue for hours — or longer — before anyone looks at it properly.</p>
+
+<p>In documented incident reviews, alert fatigue is identified as a contributing factor in a significant proportion of breach cases. Not because the alert wasn’t fired. But because nobody responded to it in time.</p>
+
+<h2 id="the-trade-off-at-the-heart-of-the-problem">The trade-off at the heart of the problem</h2>
+
+<p>Alert fatigue is a direct consequence of a specific trade-off: maximising detection coverage versus managing analyst attention.</p>
+
+<p>A security monitoring setup calibrated to catch everything will fire alerts constantly. Most of them will be benign. Some of them will be critical. The analysts responsible for reviewing them cannot sustainably differentiate at the volume generated.</p>
+
+<p>A setup calibrated to reduce noise will fire fewer alerts. More of them will be meaningful. But the calibration decisions — choosing which signals to suppress — carry real risk. Every suppressed alert category is a category you’ve accepted you won’t detect automatically. If an attacker’s behaviour mimics a suppressed category, or if the suppression is applied too broadly, you’ve created a blind spot.</p>
+
+<p>The discipline is precision tuning. Understanding which alert categories are generating what proportion of volume. Knowing the historical rate of true positives within each category. Making suppression decisions that are specific, documented, and regularly reviewed — not broad strokes applied for the sake of quiet.</p>
+
+<h2 id="what-good-monitoring-looks-like-in-practice">What good monitoring looks like in practice</h2>
+
+<p>Effective security monitoring starts with understanding your environment well enough to know what normal looks like. What systems communicate with what. What times users typically access what resources. What volumes of data transfers are routine.</p>
+
+<p>Against that baseline, anomalies become meaningful. A user accessing the finance system at 3am from an unfamiliar device isn’t routine. A large outbound file transfer to an unknown external address isn’t routine. These are the signals worth detecting — not because they’re definitely attacks, but because they’re worth investigating.</p>
+
+<p>The practical goal is a monitoring setup that generates a manageable volume of alerts, each with enough context to allow quick triage, and where the analyst knows that reviewing the queue thoroughly is achievable.</p>
+
+<p>For organisations without a dedicated security team, this principle applies even to simple tools. Email filtering that blocks obvious phishing is worth having. A rule that alerts you when someone logs into your business accounts from an unrecognised country is worth having. A notification when large amounts of data are downloaded from a cloud storage system is worth having.</p>
+
+<p>These are small, specific, high-signal notifications. They won’t catch everything. But they will catch the most common and most damaging categories of attack — and they’ll produce alerts that you can actually respond to.</p>
+
+<h2 id="the-tuning-process">The tuning process</h2>
+
+<p>Reducing alert fatigue without reducing meaningful detection requires an ongoing process.</p>
+
+<p>First, categorise your alert volume. Which rules or alert types account for the bulk of notifications? What proportion of those have historically indicated a real issue?</p>
+
+<p>Second, identify the tuning opportunity. Is the alert volume coming from a threshold that’s calibrated too loosely? From a rule that doesn’t account for a known benign behaviour in your environment? From a source that reliably generates noise?</p>
+
+<p>Third, make specific suppression decisions. Not “suppress all alerts from this system” — that creates a blind spot. “Suppress login-failure alerts from the scanner’s IP range, specifically for the login-failure rule, and only during scheduled scanning windows.” Narrow. Targeted. Documented.</p>
+
+<p>Fourth, set a review cadence. Suppression decisions decay. The environment changes. What was safe to suppress six months ago may not be safe to suppress now. Quarterly review of tuning decisions is a reasonable minimum.</p>
+
+<h2 id="what-this-means-for-non-technical-readers">What this means for non-technical readers</h2>
+
+<p>If you’re responsible for any kind of digital security — even at the level of a small business using cloud tools — the principle translates directly.</p>
+
+<p>The goal is not to receive every possible notification from every tool. The goal is to receive the notifications that require your attention and are actionable when you receive them. A constant stream of low-priority alerts that you’ve learned to ignore is worse than a quiet system, because it trains you to dismiss the queue — including the critical signals buried within it.</p>
+
+<p>Review the alerts you’re currently receiving. Ask honestly: how many of these do you act on? How many do you dismiss without reading? The ones you’re dismissing are either misconfigured (and should be tuned) or genuinely low-priority (and should be suppressed).</p>
+
+<p>The ones that remain are your actual monitoring posture. Make sure they include the signals that matter most for your specific situation.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Alert fatigue is a reminder that more is not always better in security. A monitoring setup that generates signal faster than it can be processed is not a protection mechanism — it’s a system for hiding critical information in noise.</p>
+
+<p>The goal is calibrated, sustainable detection: a setup that surfaces what matters, allows it to be acted on, and is reviewed regularly enough to stay meaningful as the environment evolves.</p>
+
+<p>That requires discipline and ongoing attention. But it produces something that comprehensive-but-ignored monitoring never can: a team that is actually watching, and actually responding, when something important happens.</p>
+
+    </div>
+
+  </article>
+</div>
+
+  </main>
+
+  <section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        
+          
+          <div class="colophon__author-name">AegisPub</div>
+          
+          <div class="colophon__author-bio">Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society.</div>
+          
+          <div class="colophon__author-links">
+            <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+            <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          </div>
+        
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="/disclaimer/">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="/privacy/">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:contactaegispub@gmail.com">contactaegispub@gmail.com</a>
+        </div>
+        <div class="colophon__social-links">
+          
+          <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          
+          
+          <a href="https://reddit.com/r/AegisPub" target="_blank" rel="noopener noreferrer">Reddit</a>
+          
+          
+          <a href="https://facebook.com/AegisPub" target="_blank" rel="noopener noreferrer">Facebook</a>
+          
+          
+          <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          
+          
+          <a href="https://instagram.com/AegisPub" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; 2026 AegisPub · <a href="/privacy/" style="color:inherit;">Privacy</a> · <a href="/disclaimer/" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+  <!-- panel.js — deferred, does not block render -->
+  <script src="/assets/js/panel.js" defer></script>
+
+</body>
+</html>
