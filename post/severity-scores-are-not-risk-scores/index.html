@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Severity Scores Are Not Risk Scores · AegisPub</title>
+  <meta name="description" content="A high CVSS score tells you about worst-case severity, not actual risk. Here's what to check before you decide what to patch first.">
+  <meta name="copyright" content="AegisPub. All rights reserved.">
+  <meta name="author" content="AegisPub">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Severity Scores Are Not Risk Scores | AegisPub</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Severity Scores Are Not Risk Scores" />
+<meta name="author" content="AegisPub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A high CVSS score tells you about worst-case severity, not actual risk. Here’s what to check before you decide what to patch first." />
+<meta name="twitter:description" property="og:description" content="A high CVSS score tells you about worst-case severity, not actual risk. Here’s what to check before you decide what to patch first." />
+<link rel="canonical" href="https://aegispub.com/post/severity-scores-are-not-risk-scores/" />
+<meta property="og:url" content="https://aegispub.com/post/severity-scores-are-not-risk-scores/" />
+<meta property="og:site_name" content="AegisPub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-17T00:00:00-05:00" />
+<meta property="article:modified_time" content="2026-02-17T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Severity Scores Are Not Risk Scores" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AegisPub"},"dateModified":"2026-02-17T00:00:00-05:00","datePublished":"2026-02-17T00:00:00-05:00","description":"A high CVSS score tells you about worst-case severity, not actual risk. Here’s what to check before you decide what to patch first.","headline":"Severity Scores Are Not Risk Scores","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegispub.com/post/severity-scores-are-not-risk-scores/"},"url":"https://aegispub.com/post/severity-scores-are-not-risk-scores/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/type.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="AegisPub RSS Feed" href="/feed.xml">
+
+  <!-- Post ID array for panel.js prev/next (injected per-layout when needed) -->
+  
+</head>
+<body>
+
+  <header class="masthead" role="banner">
+  <div class="page-wrap">
+    <a href="/" style="text-decoration:none;">
+      <img src="/assets/img/logo.png" alt="AegisPub" style="height:64px; width:auto; display:inline-block; vertical-align:center; margin-bottom:8px;">
+      <div class="masthead__wordmark">AegisPub</div>
+    </a>
+    <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
+    <div class="masthead__dateline">Friday, July 10, 2026</div>
+  </div>
+</header>
+
+  <nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="/"
+         >Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/archive/"
+         >Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/about/"
+         >About</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main-content">
+    <div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      
+      <div class="post-page__category">Cybersecurity Insights</div>
+      
+      <h1 class="post-page__title">Severity Scores Are Not Risk Scores</h1>
+      <div class="post-page__meta">
+        <time datetime="2026-02-17T00:00:00-05:00">February 17, 2026</time>
+        
+          · AegisPub
+        
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      <p>When a vulnerability is discovered in software your organisation uses, it comes with a number attached. That number — its CVSS score, ranging from zero to ten — is supposed to help you understand how serious the problem is. A score of 9.8 is labelled critical. The instinct is to treat that label as an emergency and fix it immediately.</p>
+
+<p>This instinct, while understandable, can lead you to fix the wrong things first. CVSS scores measure potential severity under idealised worst-case conditions. They do not measure how likely a vulnerability is to be exploited in your specific environment, whether the right tools to exploit it are freely available, or whether your organisation is even being targeted by the kind of attacker who would attempt it.</p>
+
+<h2 id="what-cvss-scores-actually-measure">What CVSS Scores Actually Measure</h2>
+
+<p>The Common Vulnerability Scoring System calculates its base score from a set of factors: how the vulnerability can be exploited, whether it requires user interaction, what level of privilege is needed, and what the impact would be on data confidentiality, system integrity, and availability.</p>
+
+<p>These factors are evaluated in isolation — without knowing anything about your organisation’s specific environment, your existing compensating controls, or the realistic capability and interest level of attackers targeting your sector. The result is a number that tells you about theoretical worst-case severity.</p>
+
+<h2 id="the-questions-that-reveal-actual-risk">The Questions That Reveal Actual Risk</h2>
+
+<p>A better prioritisation approach starts with CVSS as context and adds three additional questions that reflect how attackers actually make decisions.</p>
+
+<p>First: is this system directly reachable from the internet? Internet-facing systems are accessible to any attacker at essentially zero cost. Internal systems require an attacker to first achieve a foothold — a significantly more expensive prerequisite.</p>
+
+<p>Second: does a working exploit exist, or is exploitation known to be active? The CISA Known Exploited Vulnerabilities catalog maintains a running list of CVEs observed in real attacks. A finding on that list deserves greater urgency than theoretical findings of similar severity.</p>
+
+<p>Third: what does successful exploitation actually give an attacker? A vulnerability that gives access to a quarantined segment with no sensitive data nearby is a different risk than one that provides direct access to customer payment information.</p>
+
+<h2 id="vulnerability-management-as-a-living-process">Vulnerability Management as a Living Process</h2>
+
+<p>A vulnerability management programme is not a scan-and-fix cycle. It is a continuous process of discovering what exists in your environment, understanding where the attacker opportunity is concentrated, and steadily reducing that opportunity in order of actual impact.</p>
+
+<p>The programme requires continuous asset discovery — networks change, new services get deployed. It requires authenticated scanning that logs into systems to read their actual configuration. And it requires remediation tracking that follows each finding from discovery through verified remediation.</p>
+
+<p>The metric that matters is not how many vulnerabilities exist. It is whether the rate of remediation is keeping pace with the rate of new discovery — whether the overall attack surface is growing or shrinking.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Severity scores are a starting point, not a strategy. They capture how bad a vulnerability could be in a worst-case scenario. They do not capture how likely that scenario is, what it would cost someone to execute it, or whether your organisation represents a worthwhile target.</p>
+
+<p>Prioritising vulnerabilities through the lens of attacker economics — exposure, exploitation availability, and access value — produces a remediation order that reflects the actual risk to your organisation. Fix the things that make you a profitable target. Start with the ones where the attacker’s math works best.</p>
+
+    </div>
+
+  </article>
+</div>
+
+  </main>
+
+  <section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        
+          
+          <div class="colophon__author-name">AegisPub</div>
+          
+          <div class="colophon__author-bio">Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society.</div>
+          
+          <div class="colophon__author-links">
+            <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+            <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          </div>
+        
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="/disclaimer/">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="/privacy/">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:contactaegispub@gmail.com">contactaegispub@gmail.com</a>
+        </div>
+        <div class="colophon__social-links">
+          
+          <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          
+          
+          <a href="https://reddit.com/r/AegisPub" target="_blank" rel="noopener noreferrer">Reddit</a>
+          
+          
+          <a href="https://facebook.com/AegisPub" target="_blank" rel="noopener noreferrer">Facebook</a>
+          
+          
+          <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          
+          
+          <a href="https://instagram.com/AegisPub" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; 2026 AegisPub · <a href="/privacy/" style="color:inherit;">Privacy</a> · <a href="/disclaimer/" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+  <!-- panel.js — deferred, does not block render -->
+  <script src="/assets/js/panel.js" defer></script>
+
+</body>
+</html>
