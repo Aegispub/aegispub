@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Severity Scores Are Not Risk Scores"
-date:     2027-02-17
+date:     2026-02-17
 category: Cybersecurity Insights
 excerpt:  "A high CVSS score tells you about worst-case severity, not actual risk. Here's what to check before you decide what to patch first."
 author:   aegispub
