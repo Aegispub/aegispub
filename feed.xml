@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://aegispub.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aegispub.com/" rel="alternate" type="text/html" /><updated>2026-07-10T03:35:54-04:00</updated><id>https://aegispub.com/feed.xml</id><title type="html">AegisPub</title><subtitle>Independent cybersecurity and technology publication.</subtitle><author><name>AegisPub</name><email>contactaegispub@gmail.com</email></author><entry><title type="html">Key Organizations Within Our Digital Space</title><link href="https://aegispub.com/post/key-organizations-within-our-digital-space/" rel="alternate" type="text/html" title="Key Organizations Within Our Digital Space" /><published>2026-03-16T00:00:00-04:00</published><updated>2026-03-16T00:00:00-04:00</updated><id>https://aegispub.com/post/key-organizations-within-our-digital-space</id><content type="html" xml:base="https://aegispub.com/post/key-organizations-within-our-digital-space/"><![CDATA[<p>The digital space is governed — loosely but consequentially — by a constellation of organizations that set standards, respond to incidents, and shape policy. Understanding who they are is the first step to understanding how the internet actually works.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://aegispub.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aegispub.com/" rel="alternate" type="text/html" /><updated>2026-07-10T04:17:12-04:00</updated><id>https://aegispub.com/feed.xml</id><title type="html">AegisPub</title><subtitle>Independent cybersecurity and technology publication.</subtitle><author><name>AegisPub</name><email>contactaegispub@gmail.com</email></author><entry><title type="html">Key Organizations Within Our Digital Space</title><link href="https://aegispub.com/post/key-organizations-within-our-digital-space/" rel="alternate" type="text/html" title="Key Organizations Within Our Digital Space" /><published>2026-03-16T00:00:00-04:00</published><updated>2026-03-16T00:00:00-04:00</updated><id>https://aegispub.com/post/key-organizations-within-our-digital-space</id><content type="html" xml:base="https://aegispub.com/post/key-organizations-within-our-digital-space/"><![CDATA[<p>The digital space is governed — loosely but consequentially — by a constellation of organizations that set standards, respond to incidents, and shape policy. Understanding who they are is the first step to understanding how the internet actually works.</p>
 
 <h2 id="standards-bodies">Standards Bodies</h2>
 
@@ -22,7 +22,45 @@
 
 <p><strong>ENISA (European Union Agency for Cybersecurity)</strong> advises EU institutions and member states, publishes the annual Threat Landscape report, and is central to implementing NIS2 across the bloc.</p>
 
-<p>Understanding these organizations — their mandates, their relationships, and their limitations — helps make sense of how cybersecurity policy is actually made and enforced.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[A guide to the key organizations shaping cybersecurity standards, policy, and practice across the digital landscape.]]></summary></entry><entry><title type="html">Alert Fatigue: The Security Problem That’s Created by Too Much Security</title><link href="https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/" rel="alternate" type="text/html" title="Alert Fatigue: The Security Problem That’s Created by Too Much Security" /><published>2026-01-23T00:00:00-05:00</published><updated>2026-01-23T00:00:00-05:00</updated><id>https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security</id><content type="html" xml:base="https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Understanding these organizations — their mandates, their relationships, and their limitations — helps make sense of how cybersecurity policy is actually made and enforced.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[A guide to the key organizations shaping cybersecurity standards, policy, and practice across the digital landscape.]]></summary></entry><entry><title type="html">Why Cybersecurity Is an Economics Problem, Not a Technology Problem</title><link href="https://aegispub.com/post/why-cybersecurity-is-an-economics-problem-not-a-technology-problem/" rel="alternate" type="text/html" title="Why Cybersecurity Is an Economics Problem, Not a Technology Problem" /><published>2026-02-03T00:00:00-05:00</published><updated>2026-02-03T00:00:00-05:00</updated><id>https://aegispub.com/post/why-cybersecurity-is-an-economics-problem-not-a-technology-problem</id><content type="html" xml:base="https://aegispub.com/post/why-cybersecurity-is-an-economics-problem-not-a-technology-problem/"><![CDATA[<p>There is a version of cybersecurity thinking that imagines your organisation under siege by an unstoppable force — a highly skilled, infinitely patient adversary who will eventually get in no matter what you do. This picture is vivid. It is also, for most businesses, inaccurate.</p>
+
+<p>The majority of cyberattacks targeting small and medium-sized businesses are not sophisticated, targeted operations. They are commodity campaigns — automated tools running against thousands of organisations simultaneously, looking for the targets where the standard attack playbook produces a return on investment. When the math stops working in the attacker’s favour, they leave.</p>
+
+<p>This is not a reason to be complacent. It is a reason to think about security differently — as an economics problem rather than a technology arms race. Your goal is not to build a perfect system. It is to make your organisation a bad financial investment for the attackers most likely to target you.</p>
+
+<h2 id="attackers-are-running-a-business">Attackers Are Running a Business</h2>
+
+<p>Before targeting any organisation, an attacker runs a calculation. On one side of the ledger: what could they extract — customer data, financial credentials, business information, access to a payment system. On the other side: what it will cost them to extract it — the technical tools required, the time investment, the risk of detection, the opportunity cost of not targeting an easier mark instead.</p>
+
+<p>When the cost of attacking you exceeds the expected return from doing so, the rational attacker moves on. This means security investment can be evaluated through a clear lens: does this measure raise the cost of attacking us past the point where we are a profitable target?</p>
+
+<h2 id="the-four-concepts-worth-understanding">The Four Concepts Worth Understanding</h2>
+
+<p>Before making good security decisions, it helps to get four terms straight. They are frequently conflated, and the confusion leads to real resources being spent in the wrong places.</p>
+
+<p>A threat is an actor or event with the potential to cause harm. A vulnerability is a specific weakness in your systems. Risk is the combination of the two: the probability that a specific threat will successfully exploit a specific vulnerability, multiplied by the impact if that happens. Exposure is the state of being both vulnerable and reachable by an attacker.</p>
+
+<p>Getting these distinctions right transforms security conversations. When a vulnerability is identified, the relevant questions are: who is the realistic threat actor, what would it cost them to exploit this specific weakness, is this system actually exposed to that attacker, and what is the genuine business impact if exploitation succeeds?</p>
+
+<h2 id="what-raising-attacker-cost-looks-like-in-practice">What Raising Attacker Cost Looks Like in Practice</h2>
+
+<p>Consider credential phishing — the attack type responsible for a significant proportion of small business breaches. A phishing campaign costs an attacker almost nothing to run. A ready-made phishing kit can be purchased for a few hundred dollars. Even if only a fraction of a percent of recipients enter their credentials, the campaign produces valid logins to real systems.</p>
+
+<p>Now consider what happens when the targeted organisation deploys hardware-based multi-factor authentication — specifically FIDO2 security keys. The attacker successfully phishes a set of credentials. They attempt to use those credentials to log in. The system requires a hardware key that is physically in the employee’s possession and cryptographically tied to the legitimate website. The stolen password is worthless.</p>
+
+<p>The attacker did not fail because the phishing email was blocked. They failed because the outcome of a successful phish — a stolen credential — no longer provides access. The return on investment from the campaign dropped to zero. This is the practical meaning of raising attacker cost.</p>
+
+<h2 id="why-your-threat-profile-matters">Why Your Threat Profile Matters</h2>
+
+<p>Security programmes that protect against the wrong threats waste both money and attention. Most small and medium businesses do not face nation-state actors with custom-built tools and multi-year patience. They face commodity criminal operations, opportunistic automated scanners, and financially motivated groups running volume operations.</p>
+
+<p>Knowing this changes the investment profile substantially. The controls that protect against commodity attackers — current patching on internet-facing systems, hardware multi-factor authentication, login rate limiting, basic internal monitoring — are accessible and affordable.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Cybersecurity is not a technology problem with a technology solution. It is an economics problem that happens to involve technology. Attackers are running a business, and the goal of your security programme is to make your organisation a business environment where their margins do not work.</p>
+
+<p>Understanding your actual threat profile, designing defences that specifically raise attacker cost against that profile, and measuring success by whether the attacker’s math still works — these are the habits that produce durable security outcomes.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[Attackers run cost-benefit calculations like any rational actor. Understanding that changes what security investment should actually look like.]]></summary></entry><entry><title type="html">Alert Fatigue: The Security Problem That’s Created by Too Much Security</title><link href="https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/" rel="alternate" type="text/html" title="Alert Fatigue: The Security Problem That’s Created by Too Much Security" /><published>2026-01-23T00:00:00-05:00</published><updated>2026-01-23T00:00:00-05:00</updated><id>https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security</id><content type="html" xml:base="https://aegispub.com/post/alert-fatigue-the-security-problem-created-by-too-much-security/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>There’s a counterintuitive failure mode in cybersecurity that costs organisations dearly, and it isn’t caused by a lack of protection. It’s caused by too much noise in the wrong places.</p>
 
@@ -420,176 +458,4 @@ To safeguard against employment and education scams, individuals can take proact
 
 <p>Protect Personal Information: Never provide sensitive personal information unless you are sure of the legitimacy of the entity requesting it.</p>
 
-<p>Employment and education scams are pervasive in the digital world, taking advantage of individuals’ desires for job security and educational advancement. By understanding the various types of scams and implementing protective strategies, individuals can better safeguard their personal and financial information from these deceptive practices.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[In today’s job market, where competition is fierce and opportunities can seem limited, employment and education scams have become prevalent, targeting the aspirations of job seekers and students alike.]]></summary></entry><entry><title type="html">The Multifaceted Nature of Scams PART 05</title><link href="https://aegispub.com/post/the-multifaceted-nature-of-scams-part-5/" rel="alternate" type="text/html" title="The Multifaceted Nature of Scams PART 05" /><published>2025-10-13T00:00:00-04:00</published><updated>2025-10-13T00:00:00-04:00</updated><id>https://aegispub.com/post/the-multifaceted-nature-of-scams-part-5</id><content type="html" xml:base="https://aegispub.com/post/the-multifaceted-nature-of-scams-part-5/"><![CDATA[<p>The rise of digital communication platforms has provided fertile ground for a variety of scams that exploit the very nature of online interactions. Digital communication scams encompass a range of deceptive practices, from fake auctions and online marketplace scams to more sophisticated techniques like clickjacking, where malicious actors hijack a user’s clicks to execute unwanted actions. Scammers often create fake crowdfunding campaigns or subscription traps that prey on the goodwill of individuals, exploiting their desire to contribute or engage. As people increasingly rely on digital channels for both personal and financial transactions, awareness of these scams is crucial for protecting oneself from falling victim to such malicious schemes.</p>
-
-<p>In an era where digital communication is the norm, scammers have become increasingly adept at exploiting online platforms to perpetrate their fraudulent schemes. Digital communication scams encompass a wide range of tactics that take advantage of the convenience and accessibility of the internet, often targeting unsuspecting individuals through email, social media, and online marketplaces. These scams can be particularly insidious as they often rely on deception and manipulation, leveraging the trust that users place in digital communications.</p>
-
-<p>The landscape of digital communication scams is diverse, ranging from simple online frauds, such as fake auctions, to more sophisticated schemes like clickjacking, which hijacks a user’s clicks to carry out malicious actions. Cybercriminals exploit the goodwill, inattention, or urgency of internet users to gain personal information, financial details, or to sell counterfeit products. Understanding the various types of digital communication scams is crucial for both individuals and businesses to protect themselves from falling victim to these schemes.</p>
-
-<p>Types of Digital Communication Scams
-Fake Online Stores</p>
-
-<p>Description: These scams involve fraudulent websites that mimic legitimate online retailers to trick users into purchasing counterfeit or nonexistent products.</p>
-
-<p>How It Works: Scammers create websites with professional layouts and use popular brand names to attract unsuspecting customers.</p>
-
-<p>Consequences: Victims often lose their money without receiving any products, and their personal information may be compromised.</p>
-
-<p>Deepfake Scams</p>
-
-<p>Description: Deepfake technology is used to create realistic but manipulated videos or audio that misrepresent individuals or events.</p>
-
-<p>How It Works: Scammers can create videos of people, including public figures, saying or doing things they never did, often for malicious purposes such as disinformation or fraud.</p>
-
-<p>Consequences: Victims may face reputational damage, and deepfakes can spread misinformation quickly, leading to broader societal issues.</p>
-
-<p>Fake Listings Scams</p>
-
-<p>Description: These scams involve fraudulent advertisements for products or services that do not exist or are misrepresented.</p>
-
-<p>How It Works: Scammers post listings on online marketplaces or classified ad sites, luring victims with attractive prices or deals.</p>
-
-<p>Consequences: Victims pay for items that are never delivered, leading to financial loss and frustration.</p>
-
-<p>Clickjacking</p>
-
-<p>Description: Clickjacking is a malicious technique where a user is tricked into clicking on something different from what they perceive, often leading to unwanted actions.</p>
-
-<p>How It Works: A user thinks they are clicking a button or link, but the click is redirected to perform actions like downloading malware or liking a page without consent.</p>
-
-<p>Consequences: Victims may inadvertently download harmful software or expose their personal information.</p>
-
-<p>Social Media Scams</p>
-
-<p>Description: Scammers use social media platforms to perpetrate various frauds, including fake accounts and misleading ads.</p>
-
-<p>How It Works: Fraudsters may impersonate legitimate businesses or individuals to gain trust and solicit money or personal information.</p>
-
-<p>Consequences: Victims may suffer financial loss and face potential identity theft.</p>
-
-<p>Online Marketplace Scams</p>
-
-<p>Description: Scams on platforms like eBay or Craigslist where sellers misrepresent products or fail to deliver purchased items.</p>
-
-<p>How It Works: Fraudsters post attractive listings, collect payments, and then either send a counterfeit item or nothing at all.</p>
-
-<p>Consequences: Victims often lose their money with little recourse for recovery.</p>
-
-<p>Fake Surveys</p>
-
-<p>Description: Scammers create fake surveys promising rewards to capture personal information or financial data.</p>
-
-<p>How It Works: Users are incentivized to provide personal details under the guise of participating in a survey or research study.</p>
-
-<p>Consequences: Victims may find their information used for identity theft or sold to third parties.</p>
-
-<p>Auction Fraud</p>
-
-<p>Description: Fraudulent auctions where sellers do not deliver goods after payment has been made.</p>
-
-<p>How It Works: Scammers create listings for high-demand items and solicit bids from users, only to disappear after collecting payments.</p>
-
-<p>Consequences: Victims may lose their funds with little chance of recovery.</p>
-
-<p>Fake Reviews Scams</p>
-
-<p>Description: Fraudsters create or pay for fake positive reviews to manipulate potential buyers or investors.</p>
-
-<p>How It Works: Businesses can hire scammers to write glowing reviews, while negative reviews of competitors are downplayed or removed.</p>
-
-<p>Consequences: This erodes trust in legitimate businesses and can lead to poor purchasing decisions by consumers.</p>
-
-<p>Puppy Scams</p>
-
-<p>Description: Scammers pose as sellers of puppies or other pets, collecting deposits or full payments without any intention of delivering the animals.</p>
-
-<p>How It Works: Fraudsters often create fake websites or social media profiles to market nonexistent pets, asking for payment through wire transfers or gift cards.</p>
-
-<p>Consequences: Victims lose money and may experience emotional distress from believing they are purchasing a beloved pet.</p>
-
-<p>Bait-and-Switch Scams</p>
-
-<p>Description: Advertised products are not available, and customers are instead pressured to purchase different or more expensive items.</p>
-
-<p>How It Works: Scammers entice customers with an attractive deal that is either non-existent or limited, then direct them to more expensive alternatives.</p>
-
-<p>Consequences: Victims may end up paying more than expected and feel deceived by false advertising.</p>
-
-<p>Fake Auctions</p>
-
-<p>Description: Similar to auction fraud, where listings for items are created with no intention of delivering the product.</p>
-
-<p>How It Works: Scammers create urgency by claiming limited availability and collect payments from multiple bidders.</p>
-
-<p>Consequences: Victims lose money and may not receive the promised items.</p>
-
-<p>Fake Tech Gadgets</p>
-
-<p>Description: Scammers promote non-existent high-tech products at discounted rates to lure victims.</p>
-
-<p>How It Works: Listings on online marketplaces showcase tech gadgets that either do not exist or are inferior products.</p>
-
-<p>Consequences: Victims pay for items that are never shipped or receive low-quality substitutes.</p>
-
-<p>Online Classifieds Scams</p>
-
-<p>Description: Fraudulent postings on classified ad sites, often involving rental properties or job offers.</p>
-
-<p>How It Works: Scammers post listings that require deposits or personal information, then vanish after receiving payment.</p>
-
-<p>Consequences: Victims may face financial loss and difficulty in recovering funds.</p>
-
-<p>Online Game Scams</p>
-
-<p>Description: Scams targeting gamers, including fake in-game items or hacks that promise unfair advantages.</p>
-
-<p>How It Works: Fraudsters promise cheats, hacks, or in-game currency in exchange for personal information or payment.</p>
-
-<p>Consequences: Victims may lose money or find their accounts compromised.</p>
-
-<p>Ticket Scams</p>
-
-<p>Description: Fraudulent sales of event tickets, often for concerts, sports, or theater performances.</p>
-
-<p>How It Works: Scammers sell tickets that do not exist or are counterfeit, leading victims to show up without valid entry.</p>
-
-<p>Consequences: Victims lose money and miss out on events they planned to attend.</p>
-
-<p>Fake Products</p>
-
-<p>Description: Scams involving counterfeit or substandard products sold as legitimate items.</p>
-
-<p>How It Works: Scammers advertise high-quality items at low prices but deliver poor imitations instead.</p>
-
-<p>Consequences: Victims are often disappointed and lose trust in legitimate retailers.</p>
-
-<p>Internet Service Provider Scams</p>
-
-<p>Description: Scammers impersonate legitimate internet service providers to steal personal information or charge for fake services.</p>
-
-<p>How It Works: Fraudsters may contact victims claiming to offer better service or resolve issues, asking for personal or payment details.</p>
-
-<p>Consequences: Victims may fall prey to identity theft or unauthorized charges.</p>
-
-<p>Shipping Scams</p>
-
-<p>Description: Scams related to false shipping confirmations or requests for payment for nonexistent packages.</p>
-
-<p>How It Works: Scammers send emails or messages claiming that a package is on its way or requires a payment to release it.</p>
-
-<p>Consequences: Victims may be tricked into paying fees for items they never ordered.</p>
-
-<p>Prevention and Protection
-To guard against digital communication scams, individuals and organizations can take proactive steps:</p>
-
-<p>Verify Sources: Always check the legitimacy of online offers, sellers, and links before providing any personal information or making a purchase.</p>
-
-<p>Be Cautious with Links: Hover over links to see the actual URL before clicking, and be wary of shortened URLs that obscure the destination.</p>
-
-<p>Utilize Security Software: Install and maintain reputable antivirus and anti-malware software to help detect and block malicious activity.</p>
-
-<p>Educate Yourself: Stay informed about the latest scams and tactics used by cybercriminals, and share this knowledge with friends and family to raise awareness.</p>
-
-<p>Report Scams: If you encounter a scam, report it to appropriate authorities, such as the Federal Trade Commission (FTC) or the Internet Crime Complaint Center (IC3).</p>
-
-<p>Digital communication scams are a significant threat in the online landscape, taking advantage of the trust and convenience associated with digital interactions. By understanding the various types of scams and implementing protective measures, individuals and organizations can better safeguard their information and finances against these deceptive practices.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[The rise of digital communication platforms has provided fertile ground for a variety of scams that exploit the very nature of online interactions.]]></summary></entry></feed>
+<p>Employment and education scams are pervasive in the digital world, taking advantage of individuals’ desires for job security and educational advancement. By understanding the various types of scams and implementing protective strategies, individuals can better safeguard their personal and financial information from these deceptive practices.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[In today’s job market, where competition is fierce and opportunities can seem limited, employment and education scams have become prevalent, targeting the aspirations of job seekers and students alike.]]></summary></entry></feed>
