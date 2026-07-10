@@ -73,13 +73,13 @@
 
   <main id="main-content">
     
-<script>window.AEGIS_POST_IDS = ["key-organizations-within-our-digital-space","why-cybersecurity-is-an-economics-problem-not-a-technology-problem","alert-fatigue-the-security-problem-created-by-too-much-security","the-hidden-cost-of-every-security-tool","why-are-we-secure-is-the-wrong-question"];</script>
+<script>window.AEGIS_POST_IDS = ["key-organizations-within-our-digital-space","how-to-make-cyberattacks-not-worth-completing","why-cybersecurity-is-an-economics-problem-not-a-technology-problem","alert-fatigue-the-security-problem-created-by-too-much-security","the-hidden-cost-of-every-security-tool","why-are-we-secure-is-the-wrong-question"];</script>
 
 <div class="page-wrap">
 
   <div class="section-head">
     <h1 class="section-head__title">Q1 2026</h1>
-    <p class="section-head__sub">5 posts</p>
+    <p class="section-head__sub">6 posts</p>
   </div>
 
   <!-- Post expansion panel -->
@@ -116,6 +116,26 @@
   
   <!-- Fallback direct link for no-JS -->
   <a class="visually-hidden" href="/post/key-organizations-within-our-digital-space/" tabindex="-1">Key Organizations Within Our Digital Space</a>
+</div>
+
+      
+        
+<div class="post-card"
+     data-post-id="how-to-make-cyberattacks-not-worth-completing"
+     data-category="Cybersecurity Insights"
+     role="button"
+     tabindex="0"
+     aria-label="Read: How to Make Cyberattacks Not Worth Completing">
+  <div class="post-card__category">Cybersecurity Insights</div>
+  <div class="post-card__date">
+    <time datetime="2026-02-10T00:00:00-05:00">Feb 10, 2026</time>
+  </div>
+  <div class="post-card__title">How to Make Cyberattacks Not Worth Completing</div>
+  
+  <div class="post-card__excerpt">Five concrete controls that raise attacker cost instead of chasing perfect prevention — from hardware MFA to honeypots.</div>
+  
+  <!-- Fallback direct link for no-JS -->
+  <a class="visually-hidden" href="/post/how-to-make-cyberattacks-not-worth-completing/" tabindex="-1">How to Make Cyberattacks Not Worth Completing</a>
 </div>
 
       
@@ -257,6 +277,62 @@
     </div>
     <div class="post-panel__permalink">
       <a href="/post/key-organizations-within-our-digital-space/">View full post →</a>
+    </div>
+  </article>
+  
+  <article class="post-source" id="post-how-to-make-cyberattacks-not-worth-completing">
+    <div class="post-panel__title">How to Make Cyberattacks Not Worth Completing</div>
+    <div class="post-panel__meta">
+      <span>February 10, 2026</span>
+       · <span>Cybersecurity Insights</span>
+       · <span>AegisPub</span>
+    </div>
+    <div class="post-content">
+      <p>Most cybersecurity guidance focuses on blocking attacks. This framing creates an unrealistic expectation: that a sufficiently good defence prevents all attacks from succeeding. A different framing is more achievable. Instead of asking “how do we prevent every attack?” ask “how do we make successful attacks not worth completing?”</p>
+
+<p>This approach, grounded in attacker economics, shifts the goal from perfect prevention to deliberate cost imposition. You are not building a wall that no one can climb. You are making the climb so expensive that the attacker’s expected return no longer justifies the investment.</p>
+
+<h2 id="1-hardware-multi-factor-authentication-making-credentials-worthless">1. Hardware Multi-Factor Authentication: Making Credentials Worthless</h2>
+
+<p>Credential phishing is one of the most economically efficient attacks available. A phishing kit costs a few hundred dollars. Email distribution costs almost nothing. Even a tiny success rate against thousands of recipients produces profitable results.</p>
+
+<p>Hardware security keys (FIDO2/WebAuthn) address what happens after the credential is stolen. When a hardware key is required for login, it is cryptographically bound to the legitimate login site. Even if an employee enters their credentials on a fake phishing page, the attacker cannot use those credentials. The hardware key will not authenticate against a fraudulent site.</p>
+
+<p>The phishing campaign still runs. The credential still gets stolen. But the stolen credential cannot be used. The return on investment drops to zero.</p>
+
+<h2 id="2-rate-limiting-breaking-the-economics-of-automated-attacks">2. Rate Limiting: Breaking the Economics of Automated Attacks</h2>
+
+<p>Automated attacks are only economically viable because they are cheap to run at scale. A credential stuffing attack tests millions of username and password combinations from other breaches. Even a small success rate produces access to many accounts.</p>
+
+<p>Rate limiting disrupts that model. When a login system limits attempts before triggering a challenge or block, the attacker must rotate through a large pool of proxy IP addresses. Proxy pools cost money to maintain. As the required pool size grows, the cost of the attack increases. At some threshold, the cost exceeds the value of accounts that testing would reveal.</p>
+
+<h2 id="3-endpoint-detection-forcing-custom-development">3. Endpoint Detection: Forcing Custom Development</h2>
+
+<p>The majority of attacks against business endpoints use commodity tooling — freely available remote access tools, standard exploitation frameworks. This tooling is used because it works, and because it is cheap.</p>
+
+<p>A modern endpoint detection and response product with behavioural analysis makes commodity tooling dangerous to use. These tools are already fingerprinted. To bypass a modern EDR, an attacker needs custom tooling — modified versions not yet fingerprinted, or purpose-built code written specifically for this campaign. Custom development takes time and skill. Time and skill cost money.</p>
+
+<h2 id="4-internal-monitoring-taxing-every-step-after-entry">4. Internal Monitoring: Taxing Every Step After Entry</h2>
+
+<p>Without internal network monitoring, an attacker who gains initial access can move relatively freely. They can probe systems, escalate privileges, locate valuable data, and take their time reaching their objective.</p>
+
+<p>With monitoring inside the network — watching traffic between internal systems — every step the attacker takes after gaining access generates a signal. An attacker who knows the internal network is instrumented must move more slowly. Slow movement costs time. Time costs money. And every additional hour is an hour in which detection becomes more likely.</p>
+
+<h2 id="5-honeypots-the-zero-false-positive-detector">5. Honeypots: The Zero-False-Positive Detector</h2>
+
+<p>A honeypot is a decoy — a fake server, a fake set of credentials, a fake file with an enticing name. Nothing legitimate ever accesses it. Any interaction with a honeypot is therefore unambiguously suspicious.</p>
+
+<p>For a small organisation, a basic honeypot can be as simple as a file named “employee-passwords-backup” in a shared network location, configured to send an alert whenever it is opened. No legitimate employee would ever need to open that file. If it is opened, something is wrong — and the alert fires with essentially zero chance of being a false alarm.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The goal of practical cybersecurity is not to stop every possible attack. It is to make the attacks most likely to target your organisation not worth completing. Credential phishing becomes worthless when stolen credentials cannot be used. Automated scanning becomes uneconomical when rate limits force expensive proxy infrastructure. Commodity malware stops working when endpoint tools require custom development to bypass.</p>
+
+<p>None of these measures is perfect. All of them raise the cost of attacking you above the threshold where most of the attackers actually targeting organisations like yours will choose to continue. That is a defensible, achievable, realistic goal.</p>
+
+    </div>
+    <div class="post-panel__permalink">
+      <a href="/post/how-to-make-cyberattacks-not-worth-completing/">View full post →</a>
     </div>
   </article>
   
