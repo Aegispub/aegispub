@@ -885,3 +885,12 @@ img { max-width: 100%; height: auto; display: block; }
   .colophon__grid { grid-template-columns: 1fr; }
   .footer__nav { flex-wrap: wrap; gap: 12px; }
 }
+
+/* Visitor counter */
+.footer__visitors {
+  font-size: 0.68rem;
+  color: var(--c-muted);
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #2E2E2B;
+}
