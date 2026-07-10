@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Why Cybersecurity Is an Economics Problem, Not a Technology Problem"
-date:     2027-02-03
+date:     2026-02-03
 category: Cybersecurity Insights
 excerpt:  "Attackers run cost-benefit calculations like any rational actor. Understanding that changes what security investment should actually look like."
 author:   aegispub
