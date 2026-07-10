@@ -235,5 +235,29 @@ The measurement of knowledge and skills through exams and certifications can als
   <!-- panel.js — deferred, does not block render -->
   <script src="/assets/js/panel.js" defer></script>
 
+  <!-- Visitor counter — track this visit, then display total in footer -->
+  <script>
+    (function () {
+      var WORKER = 'https://aegispub-counter.YOUR-SUBDOMAIN.workers.dev';
+
+      // Track visit (skip localhost)
+      if (window.location.hostname !== 'localhost') {
+        fetch(WORKER + '/collect', { method: 'POST', keepalive: true })
+          .catch(function () {});
+      }
+
+      // Display count in footer
+      fetch(WORKER + '/count')
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          var el = document.getElementById('visitor-count');
+          if (el && typeof d.total === 'number') {
+            el.textContent = d.total.toLocaleString();
+          }
+        })
+        .catch(function () {}); // shows — if Worker unreachable
+    }());
+  </script>
+
 </body>
 </html>
