@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "How to Make Cyberattacks Not Worth Completing"
-date:     2027-02-10
+date:     2026-02-10
 category: Cybersecurity Insights
 excerpt:  "Five concrete controls that raise attacker cost instead of chasing perfect prevention — from hardware MFA to honeypots."
 author:   aegispub
