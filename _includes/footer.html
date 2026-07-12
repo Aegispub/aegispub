@@ -19,9 +19,25 @@
 
     </div>
 
-    <!-- Visitor counter — sits below the flex row, full width -->
-    <div class="footer__visitors">
-      Visitors: <span id="visitor-count">—</span>
+    <!-- Stats bar — below the flex row, full width -->
+    <div class="footer__stats">
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Live</span>
+          <span class="footer__stat-value" id="live-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="live-flags"></span>
+      </div>
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Visitors</span>
+          <span class="footer__stat-value" id="visitor-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="country-flags"></span>
+      </div>
+
     </div>
 
   </div>
