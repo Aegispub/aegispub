@@ -1058,40 +1058,84 @@ International Standards: As Cybersecurity threats are not confined by borders, f
   <!-- panel.js — deferred, does not block render -->
   <script src="/assets/js/panel.js" defer></script>
 
-  <!-- Visitor counter — track this visit, then display total in footer -->
+  <!-- Live dateline — always shows visitor's current date -->
   <script>
     (function () {
-      var WORKER = 'https://counter.contactaegispub.workers.dev';
+      var el = document.getElementById('masthead-date');
+      if (!el) return;
+      var now = new Date();
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var months = ['January','February','March','April','May','June',
+                    'July','August','September','October','November','December'];
+      el.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] +
+                       ' ' + now.getDate() + ', ' + now.getFullYear();
+    }());
+  </script>
 
-      // Track visit (skip localhost)
-      if (window.location.hostname !== 'localhost') {
-        fetch(WORKER + '/collect', { method: 'POST', keepalive: true })
-          .catch(function () {});
+  <!-- Visitor counter + live tracker -->
+  <script>
+    (function () {
+      var WORKER = 'https://counter.aegispub.workers.dev';
+
+      // Session token — new tab = new live session, refresh = same session
+      var token = sessionStorage.getItem('aegis_token');
+      if (!token) {
+        token = Math.random().toString(36).slice(2) + Date.now().toString(36);
+        sessionStorage.setItem('aegis_token', token);
       }
 
-      // Display count in footer
+      // Track this visit
+      if (window.location.hostname !== 'localhost') {
+        fetch(WORKER + '/collect', {
+          method: 'POST',
+          keepalive: true,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token: token })
+        }).catch(function () {});
+      }
+
+      // Helper — country code to emoji flag
+      function toFlag(code) {
+        if (!code || code.length !== 2) return '';
+        return code.toUpperCase().split('').map(function (c) {
+          return String.fromCodePoint(0x1F1E6 - 65 + c.charCodeAt(0));
+        }).join('');
+      }
+
+      // Fetch and display counts + flags
       fetch(WORKER + '/count')
         .then(function (r) { return r.json(); })
         .then(function (d) {
-          var el = document.getElementById('visitor-count');
-          if (el && typeof d.total === 'number') {
-            el.textContent = d.total.toLocaleString();
-          }
-        })
-        .catch(function () {}); // shows — if Worker unreachable
-    }());
 
-      // Live dateline — always shows visitor's current date
-      (function () {
-        var el = document.getElementById('masthead-date');
-        if (!el) return;
-        var now = new Date();
-        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-        var months = ['January','February','March','April','May','June',
-                      'July','August','September','October','November','December'];
-        el.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] +
-                         ' ' + now.getDate() + ', ' + now.getFullYear();
-      }());    
+          // Total visitor count
+          var visitEl = document.getElementById('visitor-count');
+          if (visitEl && typeof d.total === 'number') {
+            visitEl.textContent = d.total.toLocaleString();
+          }
+
+          // Live count
+          var liveEl = document.getElementById('live-count');
+          if (liveEl && typeof d.live === 'number') {
+            liveEl.textContent = d.live;
+          }
+
+          // Current visitor's flag below live count
+          var liveFlagEl = document.getElementById('live-flags');
+          if (liveFlagEl && d.current) {
+            liveFlagEl.textContent = toFlag(d.current);
+            liveFlagEl.title = d.current;
+          }
+
+          // All accumulated country flags below visitor count
+          var countryFlagEl = document.getElementById('country-flags');
+          if (countryFlagEl && Array.isArray(d.countries) && d.countries.length) {
+            countryFlagEl.textContent = d.countries.map(toFlag).join('');
+            countryFlagEl.title = d.countries.join(', ');
+          }
+
+        })
+        .catch(function () {});
+    }());
   </script>
 
 </body>
