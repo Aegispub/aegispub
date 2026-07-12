@@ -354,6 +354,18 @@ International Standards: As Cybersecurity threats are not confined by borders, f
         })
         .catch(function () {}); // shows — if Worker unreachable
     }());
+
+      // Live dateline — always shows visitor's current date
+      (function () {
+        var el = document.getElementById('masthead-date');
+        if (!el) return;
+        var now = new Date();
+        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        var months = ['January','February','March','April','May','June',
+                      'July','August','September','October','November','December'];
+        el.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] +
+                         ' ' + now.getDate() + ', ' + now.getFullYear();
+      }());    
   </script>
 
 </body>
