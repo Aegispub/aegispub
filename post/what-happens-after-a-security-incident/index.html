@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Happens After a Security Incident — And Why "Fix the Symptom" Is the Wrong Answer · AegisPub</title>
+  <meta name="description" content="Where a security problem is found and where it actually started are almost always different places. Here's why tracing back to the origin matters more than c...">
+  <meta name="copyright" content="AegisPub. All rights reserved.">
+  <meta name="author" content="AegisPub">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>What Happens After a Security Incident — And Why “Fix the Symptom” Is the Wrong Answer | AegisPub</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="What Happens After a Security Incident — And Why “Fix the Symptom” Is the Wrong Answer" />
+<meta name="author" content="AegisPub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Where a security problem is found and where it actually started are almost always different places. Here’s why tracing back to the origin matters more than closing the ticket." />
+<meta name="twitter:description" property="og:description" content="Where a security problem is found and where it actually started are almost always different places. Here’s why tracing back to the origin matters more than closing the ticket." />
+<link rel="canonical" href="https://aegispub.com/post/what-happens-after-a-security-incident/" />
+<meta property="og:url" content="https://aegispub.com/post/what-happens-after-a-security-incident/" />
+<meta property="og:site_name" content="AegisPub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-03-24T00:00:00-04:00" />
+<meta property="article:modified_time" content="2026-03-24T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="What Happens After a Security Incident — And Why “Fix the Symptom” Is the Wrong Answer" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AegisPub"},"dateModified":"2026-03-24T00:00:00-04:00","datePublished":"2026-03-24T00:00:00-04:00","description":"Where a security problem is found and where it actually started are almost always different places. Here’s why tracing back to the origin matters more than closing the ticket.","headline":"What Happens After a Security Incident — And Why “Fix the Symptom” Is the Wrong Answer","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegispub.com/post/what-happens-after-a-security-incident/"},"url":"https://aegispub.com/post/what-happens-after-a-security-incident/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/type.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="AegisPub RSS Feed" href="/feed.xml">
+
+  <!-- Post ID array for panel.js prev/next (injected per-layout when needed) -->
+  
+</head>
+<body>
+
+  <header class="masthead" role="banner">
+  <div class="page-wrap">
+    <a href="/" style="text-decoration:none;">
+      <img src="/assets/img/logo.png" alt="AegisPub" style="height:64px; width:auto; display:inline-block; vertical-align:center; margin-bottom:8px;">
+      <div class="masthead__wordmark">AegisPub</div>
+    </a>
+    <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
+    <div class="masthead__dateline" id="masthead-date"></div>
+  </div>
+</header>
+
+  <nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="/"
+         >Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/archive/"
+         >Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/about/"
+         >About</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main-content">
+    <div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      
+      <div class="post-page__category">Cybersecurity Insights</div>
+      
+      <h1 class="post-page__title">What Happens After a Security Incident — And Why "Fix the Symptom" Is the Wrong Answer</h1>
+      <div class="post-page__meta">
+        <time datetime="2026-03-24T00:00:00-04:00">March 24, 2026</time>
+        
+          · AegisPub
+        
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>When something goes wrong in a security sense — an account is compromised, suspicious activity shows up on a system, data appears where it should not — the natural response is to fix the immediate problem. Reset the account. Remove the malicious software. Restore from backup. Close the incident.</p>
+
+<p>That response addresses the symptom. It often leaves the cause untouched.</p>
+
+<p>Understanding why the place you find a security problem and the place the problem actually started are almost always different locations — and building the habit of tracing back to the origin — is what separates security responses that actually protect you from those that only clean up after the fact.</p>
+
+<h2 id="why-alerts-fire-at-the-wrong-place">Why Alerts Fire at the Wrong Place</h2>
+
+<p>By the time any alert or detection fires, an attacker who has gotten into an environment has typically been there for a while. The detection systems you have are watching for unusual behavior — strange processes running, unexpected logins, large-scale file access — and they fire when they see it. But that unusual behavior is not necessarily happening at the attacker’s entry point.</p>
+
+<p>A realistic sequence might look like this: an attacker sends a convincing phishing email. One employee clicks and enters their credentials on a fake login page. The attacker uses those credentials to access a system. From that system, they gather information about the internal network. They use what they learn to access a second, more sensitive system. Two weeks later, that second system generates an alert for unusual behavior.</p>
+
+<p>The alert fires at the second system. The entry point was a phishing email two weeks earlier. The compromised account that started the chain belongs to an employee who has no idea anything happened.</p>
+
+<p>If you reset the compromised account on the second system, remove the malicious activity, and close the ticket — but do not find and address the original phishing compromise — the attacker has the same access they started with. The open window is still open.</p>
+
+<h2 id="the-discipline-of-tracing-back">The Discipline of Tracing Back</h2>
+
+<p>The instinct that prevents this problem is the question: “How did they get here?” not just “What did they do here?”</p>
+
+<p>Answering that question requires following the chain backward. If an alert fires on a server, the investigation asks: what account was used to access this server, and what did that account do before it got here? Where was that account active before this system? What events preceded this activity in the authentication logs?</p>
+
+<p>This kind of backward tracing is a skill, and it develops with practice. For non-technical business owners, the practical translation is simpler: whenever a security incident is addressed, the conversation should include “where did this start?” before the ticket is closed.</p>
+
+<p>In some cases the answer is clear — the entry was a phishing email, or an account that should have been deactivated was still active. In other cases it requires more investigation. But asking the question consistently means that at least some of the time, you identify and close the actual entry point rather than only cleaning up the consequences.</p>
+
+<h2 id="one-fact-is-a-hypothesis-not-a-verdict">One Fact Is a Hypothesis, Not a Verdict</h2>
+
+<p>One of the most common investigation mistakes — and this applies equally to experienced security professionals and business owners handling an incident for the first time — is acting decisively on incomplete information.</p>
+
+<p>A suspicious entry in a log file, a command that looks alarming, a login from an unusual location: each of these is a piece of evidence that deserves investigation, not an immediate verdict. The concerning thing might have a benign explanation. An employee who typed a wrong command. An error in a log. A legitimate access from an unusual location because someone was traveling.</p>
+
+<p>Acting on a single observation without building the complete picture creates two problems. It leads to responses that are disproportionate or misdirected. And it can, in some cases, destroy the forensic evidence you would need to understand what actually happened — if you restore a system from backup before you have investigated what was on it, the information about the original entry point may be gone.</p>
+
+<p>The practical habit is to gather enough context before acting. What preceded this event? What followed it? Is there corroborating evidence? Is there an explanation that makes this normal rather than suspicious? If the answers point consistently toward a genuine problem, act. If the picture is incomplete, keep investigating.</p>
+
+<h2 id="the-helpdesk-attack-a-process-problem-not-a-people-problem">The Helpdesk Attack: A Process Problem, Not a People Problem</h2>
+
+<p>An important illustration of the “wrong place” principle comes from social engineering attacks on support or helpdesk functions.</p>
+
+<p>Consider a scenario where an attacker calls an IT helpdesk, claims to be a senior executive who is traveling and locked out of their account, creates urgency around an important meeting, and persuades the agent to reset the password through a reduced verification process. The attacker then uses the reset account to access sensitive email and initiate a fraudulent transaction.</p>
+
+<p>The instinct is to identify the helpdesk agent as the point of failure. They made the wrong call. They should have held to the verification procedure. Training failed.</p>
+
+<p>The deeper investigation reveals something different. The verification procedure itself contained a discretionary bypass — a provision that allowed agents to use alternative verification “at their discretion” when standard verification could not be completed. The attacker did not trick the agent into breaking the rules. They used the rules. The policy created the vulnerability.</p>
+
+<p>The fix is not more training for the agent. The fix is eliminating the discretionary bypass for any action involving privileged accounts. Any account with elevated access — executives, administrators, finance personnel — requires verification through two independent channels. No urgency from a caller, however convincing, creates an exception. Urgency is itself a social engineering indicator, and the procedure should name it as one.</p>
+
+<p>This is what finding the actual root cause looks like. The symptom was an account compromise. The process failure was a policy with a built-in exploitable bypass. Fixing only the symptom — resetting the account again, retraining the agent — leaves the policy in place for the next caller.</p>
+
+<h2 id="building-the-habit">Building the Habit</h2>
+
+<p>For businesses that do not have dedicated security teams, building the “trace back to origin” habit means establishing a simple practice for any security incident, large or small:</p>
+
+<p>Document what happened and when. Reconstruct the timeline before taking action. Identify the earliest point in the sequence that you can find. Ask whether closing that early point — not just the later ones — would have prevented the incident. Include that question in any post-incident review.</p>
+
+<p>This does not require technical tools or security expertise at the start. It requires the discipline to ask the right questions and to treat an incident as something to learn from rather than only something to contain.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Security incidents teach you something, if you ask the right questions. The alert that fires, the account that was compromised, the system that showed unusual behavior — these are symptoms. The actual lesson is in what made the entry possible in the first place.</p>
+
+<p>The organizations that get better at security over time are the ones that consistently ask “how did this happen?” rather than only “how do we fix this?” That question, asked consistently, closes the real weak links rather than only cleaning up their consequences.</p>
+
+    </div>
+
+  </article>
+</div>
+
+  </main>
+
+  <section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        
+          
+          <div class="colophon__author-name">AegisPub</div>
+          
+          <div class="colophon__author-bio">Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society.</div>
+          
+          <div class="colophon__author-links">
+            <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+            <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          </div>
+        
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="/disclaimer/">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="/privacy/">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:contactaegispub@gmail.com">contactaegispub@gmail.com</a>
+        </div>
+        <div class="colophon__social-links">
+          
+          <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          
+          
+          <a href="https://reddit.com/r/AegisPub" target="_blank" rel="noopener noreferrer">Reddit</a>
+          
+          
+          <a href="https://facebook.com/AegisPub" target="_blank" rel="noopener noreferrer">Facebook</a>
+          
+          
+          <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          
+          
+          <a href="https://instagram.com/AegisPub" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; 2026 AegisPub · <a href="/privacy/" style="color:inherit;">Privacy</a> · <a href="/disclaimer/" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+
+    <!-- Stats bar — below the flex row, full width -->
+    <div class="footer__stats">
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Live</span>
+          <span class="footer__stat-value" id="live-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="live-flags"></span>
+      </div>
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Visitors</span>
+          <span class="footer__stat-value" id="visitor-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="country-flags"></span>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- panel.js — deferred, does not block render -->
+  <script src="/assets/js/panel.js" defer></script>
+
+  <!-- Live dateline — always shows visitor's current date -->
+  <script>
+    (function () {
+      var el = document.getElementById('masthead-date');
+      if (!el) return;
+      var now = new Date();
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var months = ['January','February','March','April','May','June',
+                    'July','August','September','October','November','December'];
+      el.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] +
+                       ' ' + now.getDate() + ', ' + now.getFullYear();
+    }());
+  </script>
+
+  <!-- Visitor counter + live tracker -->
+  <script>
+    (function () {
+      var WORKER = 'https://counter.contactaegispub.workers.dev';
+
+      // Session token — new tab = new live session, refresh = same session
+      var token = sessionStorage.getItem('aegis_token');
+      if (!token) {
+        token = Math.random().toString(36).slice(2) + Date.now().toString(36);
+        sessionStorage.setItem('aegis_token', token);
+      }
+
+      // Track this visit
+      if (window.location.hostname !== 'localhost') {
+        fetch(WORKER + '/collect', {
+          method: 'POST',
+          keepalive: true,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token: token })
+        }).catch(function () {});
+      }
+
+      // Helper — country code to emoji flag
+      function toFlag(code) {
+        if (!code || code.length !== 2) return '';
+        return code.toUpperCase().split('').map(function (c) {
+          return String.fromCodePoint(0x1F1E6 - 65 + c.charCodeAt(0));
+        }).join('');
+      }
+
+      // Fetch and display counts + flags
+      fetch(WORKER + '/count')
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+
+          // Total visitor count
+          var visitEl = document.getElementById('visitor-count');
+          if (visitEl && typeof d.total === 'number') {
+            visitEl.textContent = d.total.toLocaleString();
+          }
+
+          // Live count
+          var liveEl = document.getElementById('live-count');
+          if (liveEl && typeof d.live === 'number') {
+            liveEl.textContent = d.live;
+          }
+
+          // Current visitor's flag below live count
+          var liveFlagEl = document.getElementById('live-flags');
+          if (liveFlagEl && d.current) {
+            liveFlagEl.textContent = toFlag(d.current);
+            liveFlagEl.title = d.current;
+          }
+
+          // All accumulated country flags below visitor count
+          var countryFlagEl = document.getElementById('country-flags');
+          if (countryFlagEl && Array.isArray(d.countries) && d.countries.length) {
+            countryFlagEl.textContent = d.countries.map(toFlag).join('');
+            countryFlagEl.title = d.countries.join(', ');
+          }
+
+        })
+        .catch(function () {});
+    }());
+  </script>
+
+</body>
+</html>
