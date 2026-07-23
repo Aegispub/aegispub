@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "The Importance of Structured Learning in Self-Directed Education PART 05"
+title:    "Structured Learning in Self-Directed Education — Pt.5"
 date:     2025-06-16
 category: Technology & Society
-excerpt:  "Fostering a Competitive Edge"
+excerpt:  "Part 5: closing the series — how structured, self-directed learning becomes a competitive edge."
 author:   aegispub
 ---
 

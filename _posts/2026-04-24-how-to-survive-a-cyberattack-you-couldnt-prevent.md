@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "How to Survive a Cyberattack You Couldn't Prevent: The Case for Layered Security"
+title:    "How to Survive a Cyberattack You Couldn't Prevent"
 date:     2026-04-24
 category: Cybersecurity Insights
-excerpt:  "The organizations that survive incidents without catastrophic outcomes aren't the ones with better prevention — they're the ones built to survive when prevention fails."
+excerpt:  "Organizations that survive incidents without catastrophic outcomes aren't the best at prevention — they're built to survive its failure."
 author:   aegispub
 ---
 

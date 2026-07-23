@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Your Firewall Isn't Enough: Understanding the Layers Between Attackers and Your Data"
+title:    "Your Firewall Isn't Enough"
 date:     2026-04-15
 category: Cybersecurity Insights
 excerpt:  "Real security isn't one strong wall — it's a series of independent checkpoints, each designed to catch what the previous one missed."

@@ -3,7 +3,7 @@ layout:   post
 title:    "The Real Forces Shaping Your Digital Footprint PART 01"
 date:     2025-11-22
 category: Policy & Regulation
-excerpt:  "Most of us don’t think twice about the quick searches we make, the apps we open, or the moments we pick up our phone out of habit. These actions feel small, almost forgettable."
+excerpt:  "The quick searches and habitual app-opens that feel forgettable are quietly shaping a digital footprint larger than most realize."
 author:   aegispub
 ---
 

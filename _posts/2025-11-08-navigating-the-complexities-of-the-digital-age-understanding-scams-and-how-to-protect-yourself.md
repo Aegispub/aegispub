@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Navigating the Complexities of the Digital Age: Understanding Scams and How to Protect Yourself"
+title:    "Navigating the Digital Age: Understanding Scams"
 date:     2025-11-08
 category: Cybersecurity Insights
 excerpt:  "The digital age has revolutionized the way we live, work, and interact with the world."

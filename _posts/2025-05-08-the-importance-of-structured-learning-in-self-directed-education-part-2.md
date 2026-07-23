@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "The Importance of Structured Learning in Self-Directed Education PART 02"
+title:    "Structured Learning in Self-Directed Education — Pt.2"
 date:     2025-05-08
 category: Technology & Society
-excerpt:  "Providing Credibility and Recognition"
+excerpt:  "Part 2: how structured learning gives self-taught skills the credibility employers recognize."
 author:   aegispub
 ---
 

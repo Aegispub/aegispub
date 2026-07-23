@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Alert Fatigue: The Security Problem That's Created by Too Much Security"
+title:    "Alert Fatigue: When Too Much Security Backfires"
 date:     2026-01-23
 category: Research & Analysis
 excerpt:  "More alerts don't mean better security. Here's how alert fatigue causes real incidents to be missed — and how to tune monitoring so it actually gets watched."

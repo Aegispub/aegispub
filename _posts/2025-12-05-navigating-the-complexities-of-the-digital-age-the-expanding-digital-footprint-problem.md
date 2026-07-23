@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "Navigating the Complexities of the Digital Age: The Expanding Digital Footprint Problem"
+title:    "The Expanding Digital Footprint Problem"
 date:     2025-12-05
 category: Policy & Regulation
-excerpt:  "Every tap, swipe, or quick search feels harmless in the moment. Yet each of these small actions leaves behind tiny traces of information about who we are, what we like, and how we move through the online world."
+excerpt:  "Every tap and swipe feels harmless, yet each leaves a trace of who we are, what we like, and how we move online."
 author:   aegispub
 ---
 

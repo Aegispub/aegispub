@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "The Hidden Cost of Every Security Tool: What Nobody Tells You Before You Buy"
+title:    "The Hidden Cost of Every Security Tool"
 date:     2026-01-14
 category: Technology & Society
 excerpt:  "Security tools are sold on what they prevent. Here's what the marketing leaves out — the operational, financial, and human costs of running them."

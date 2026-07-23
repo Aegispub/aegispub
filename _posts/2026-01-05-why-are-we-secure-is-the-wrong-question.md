@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Why 'Are We Secure?' Is the Wrong Question — and What to Ask Instead"
+title:    "Why 'Are We Secure?' Is the Wrong Question"
 date:     2026-01-05
 category: Cybersecurity Insights
 excerpt:  "Security isn't a yes-or-no state — it's a set of trade-offs. Here's the better question to ask, and a practical framework for answering it."

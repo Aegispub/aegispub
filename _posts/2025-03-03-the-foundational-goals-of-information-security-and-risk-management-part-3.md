@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "The Foundational Goals of Information Security and Risk Management PART 03"
+title:    "Foundational Goals of Info Security & Risk Mgmt — Pt.3"
 date:     2025-03-03
 category: Research & Analysis
 excerpt:  "The third step in establishing a comprehensive framework for information security and risk management is the formalization of security objectives."

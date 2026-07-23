@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Series: The Importance of Structured Learning in Self-Directed Education"
+title:    "Series: Structured Learning in Self-Directed Education"
 date:     2025-06-30
 category: Technology & Society
 excerpt:  "In today’s rapidly evolving world, education can take many forms."

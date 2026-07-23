@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "The Foundational Goals of Information Security and Risk Management PART 05"
+title:    "Foundational Goals of Info Security & Risk Mgmt — Pt.5"
 date:     2025-03-29
 category: Research & Analysis
 excerpt:  "The fifth step in establishing a robust framework for information security and risk management is continuous monitoring and improvement."

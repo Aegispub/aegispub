@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "The Importance of Structured Learning in Self-Directed Education PART 01"
+title:    "Structured Learning in Self-Directed Education — Pt.1"
 date:     2025-04-25
 category: Technology & Society
-excerpt:  "Measuring Knowledge and Skills"
+excerpt:  "Part 1: why measuring what you've actually learned matters more than finishing a course."
 author:   aegispub
 ---
 

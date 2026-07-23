@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "The Foundational Goals of Information Security and Risk Management PART 04"
+title:    "Foundational Goals of Info Security & Risk Mgmt — Pt.4"
 date:     2025-03-16
 category: Research & Analysis
 excerpt:  "The fourth step in establishing a robust framework for information security and risk management is implementing security controls."
