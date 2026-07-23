@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "The Importance of Structured Learning in Self-Directed Education PART 04"
+title:    "Structured Learning in Self-Directed Education — Pt.4"
 date:     2025-06-03
 category: Technology & Society
-excerpt:  "Supporting Continuous Improvement"
+excerpt:  "Part 4: how structured learning builds habits that support continuous improvement over time."
 author:   aegispub
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "The Foundational Goals of Information Security and Risk Management PART 01"
+title:    "Foundational Goals of Info Security & Risk Mgmt — Pt.1"
 date:     2025-02-04
 category: Research & Analysis
 excerpt:  "The first step in establishing a robust framework for information security and risk management is recognizing the necessity of protecting data and systems."

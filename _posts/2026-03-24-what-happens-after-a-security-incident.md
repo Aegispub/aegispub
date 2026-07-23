@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "What Happens After a Security Incident — And Why \"Fix the Symptom\" Is the Wrong Answer"
+title:    "What Happens After a Security Incident"
 date:     2026-03-24
 category: Cybersecurity Insights
-excerpt:  "Where a security problem is found and where it actually started are almost always different places. Here's why tracing back to the origin matters more than closing the ticket."
+excerpt:  "Where a security problem is found and where it started are almost always different places. Tracing the origin matters most."
 author:   aegispub
 ---
 

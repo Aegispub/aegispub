@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "The Foundational Goals of Information Security and Risk Management PART 02"
+title:    "Foundational Goals of Info Security & Risk Mgmt — Pt.2"
 date:     2025-02-18
 category: Research & Analysis
 excerpt:  "Once the need for security is established, the next crucial step is to identify the key security concerns that threaten information systems and data integrity."

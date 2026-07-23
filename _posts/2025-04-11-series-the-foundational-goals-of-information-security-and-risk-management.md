@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "Series: The Foundational Goals of Information Security and Risk Management"
+title:    "Series: Foundational Goals of Info Security & Risk Mgmt"
 date:     2025-04-11
 category: Research & Analysis
-excerpt:  "In the evolving landscape of digital systems and data-centric operations, the foundational goals of information security and risk management have become critical."
+excerpt:  "A closing look at the series: how confidentiality, integrity, and availability anchor every real-world security decision."
 author:   aegispub
 ---
 

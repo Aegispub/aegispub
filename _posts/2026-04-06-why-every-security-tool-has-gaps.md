@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Why Every Security Tool Has Gaps — And What That Means for Protecting Your Business"
+title:    "Why Every Security Tool Has Gaps"
 date:     2026-04-06
 category: Cybersecurity Insights
 excerpt:  "No security tool works perfectly. Understanding that isn't pessimistic — it's the starting point for building security that actually holds up."

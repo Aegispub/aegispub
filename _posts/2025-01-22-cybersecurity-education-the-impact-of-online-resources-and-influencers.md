@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Cybersecurity Education: The Impact of Online Resources and Influencers"
+title:    "Cybersecurity Education: Online Resources & Influencers"
 date:     2025-01-22
 category: Technology & Society
 excerpt:  "The field of Cybersecurity is rapidly evolving, and the demand for knowledgeable professionals has never been greater."

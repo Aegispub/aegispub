@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "Why Your Security Is Only as Strong as Its Weakest Point — And What to Do About It"
+title:    "Security Is Only as Strong as Its Weakest Point"
 date:     2026-03-04
 category: Cybersecurity Insights
-excerpt:  "Security doesn't work like a stack of reinforcements — it works like a chain, measured at its weakest link. Here's where those links actually come from, and how to find yours."
+excerpt:  "Security works like a chain, not a stack of reinforcements — measured at its weakest link. Here's how to find yours."
 author:   aegispub
 ---
 

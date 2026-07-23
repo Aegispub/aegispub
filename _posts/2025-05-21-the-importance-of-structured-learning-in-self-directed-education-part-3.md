@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "The Importance of Structured Learning in Self-Directed Education PART 03"
+title:    "Structured Learning in Self-Directed Education — Pt.3"
 date:     2025-05-21
 category: Technology & Society
-excerpt:  "Encouraging Structured Learning"
+excerpt:  "Part 3: the case for structure — why a guided path beats unfocused, ad hoc self-study."
 author:   aegispub
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "The Vendor You Trust Is Part of Your Security — Whether You Know It or Not"
+title:    "The Vendor You Trust Is Part of Your Security"
 date:     2026-03-13
 category: Cybersecurity Insights
-excerpt:  "When you give a vendor access to your systems or data, their security becomes part of yours. Here's how inherited risk works, and why the procurement moment is your real leverage point."
+excerpt:  "Give a vendor access to your systems and their security becomes part of yours. Here's how inherited risk actually works."
 author:   aegispub
 ---
 
