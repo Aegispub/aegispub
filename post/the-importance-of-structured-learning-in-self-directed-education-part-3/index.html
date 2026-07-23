@@ -283,15 +283,15 @@ Structured learning through certifications is essential for ensuring that indivi
         sessionStorage.setItem('aegis_token', token);
       }
 
-      // Track this visit
-      if (window.location.hostname !== 'localhost') {
-        fetch(WORKER + '/collect', {
+      // Track visit first
+    var collectPromise = (window.location.hostname !== 'localhost')
+      ? fetch(WORKER + '/collect', {
           method: 'POST',
           keepalive: true,
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ token: token })
-        }).catch(function () {});
-      }
+        }).catch(function () {})
+      : Promise.resolve();
 
       // Helper — country code to emoji flag
       function toFlag(code) {
@@ -302,8 +302,13 @@ Structured learning through certifications is essential for ensuring that indivi
       }
 
       // Fetch and display counts + flags
-      fetch(WORKER + '/count')
-        .then(function (r) { return r.json(); })
+      collectPromise
+      .then(function () {
+        return fetch(WORKER + '/count');
+      })
+      .then(function (r) {
+        return r.json();
+      })
         .then(function (d) {
 
           // Total visitor count
