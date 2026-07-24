@@ -2,7 +2,11 @@
   <div class="page-wrap">
     <a href="{{ '/' | relative_url }}" style="text-decoration:none;">
       <img src="/assets/img/logo.png" alt="AegisPub" style="height:64px; width:auto; display:inline-block; vertical-align:center; margin-bottom:8px;">
+      {% if page.layout == "home" %}
+      <h1 class="masthead__wordmark">AegisPub</h1>
+      {% else %}
       <div class="masthead__wordmark">AegisPub</div>
+      {% endif %}
     </a>
     <div class="masthead__tagline">{{ site.tagline }}</div>
     <div class="masthead__dateline" id="masthead-date"></div>
