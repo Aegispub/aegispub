@@ -5,28 +5,69 @@
 
 /* ----------------------------------------------------------
    Self-hosted fonts
-   Add @font-face rules here once font files are placed in
-   assets/fonts/. Example shown for a hypothetical sans.
-   Georgia (serif) is a web-safe system font — no hosting needed.
+   Files live in assets/fonts/ — see README "Self-hosted fonts"
+   for source/licensing (all three are Google Fonts, SIL OFL).
+   Georgia (serif) remains a web-safe system font — no hosting needed.
    ---------------------------------------------------------- */
 
-/*
+/* Barlow — body/UI sans, replaces system-ui as the primary sans */
 @font-face {
-  font-family: "PublicSans";
-  src: url("/assets/fonts/PublicSans-Regular.woff2") format("woff2");
+  font-family: "Barlow";
+  src: url("/assets/fonts/Barlow-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PublicSans";
-  src: url("/assets/fonts/PublicSans-SemiBold.woff2") format("woff2");
+  font-family: "Barlow";
+  src: url("/assets/fonts/Barlow-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/assets/fonts/Barlow-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-*/
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/assets/fonts/Barlow-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Archivo Black — single-weight display face, masthead wordmark only */
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url("/assets/fonts/ArchivoBlack-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Mono — code blocks, inline code */
+@font-face {
+  font-family: "SpaceMono";
+  src: url("/assets/fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("/assets/fonts/SpaceMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ----------------------------------------------------------
    Global type scale
@@ -42,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Body text — sans */
 body, p, li, td, th, label, input, textarea, select {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
 }
 
 /* ----------------------------------------------------------
@@ -92,7 +133,7 @@ body, p, li, td, th, label, input, textarea, select {
    Used for category names, section headings, platform names
    ---------------------------------------------------------- */
 .label-caps {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.62rem;
   font-variant: small-caps;
   letter-spacing: 0.12em;
