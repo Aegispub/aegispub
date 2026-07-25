@@ -8,7 +8,11 @@ email: contactaegispub@gmail.com
 twitter:
   username: AegisPub
   card: summary_large_image
-logo: /assets/img/logo.png
+
+# Sitewide og:image fallback used by jekyll-seo-tag when a page/post has no
+# `image:` of its own. Sized 1200x630 to meet Open Graph / Twitter card
+# minimums — do not point this back at the 192x192 masthead logo.
+logo: /assets/img/og-default.png
 
 # Authoring
 timezone: America/New_York
