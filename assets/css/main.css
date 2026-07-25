@@ -27,8 +27,10 @@
   --cat-default:  #6B6B60;  /* muted  — anything else            */
 
   /* Typography scale */
-  --font-serif:  Georgia, "Times New Roman", Times, serif;
-  --font-sans:   system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif:   Georgia, "Times New Roman", Times, serif;
+  --font-sans:    "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "ArchivoBlack", Georgia, "Times New Roman", Times, serif;
+  --font-mono:    "SpaceMono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
   /* Spacing */
   --gap:         16px;
@@ -84,10 +86,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .masthead__wordmark {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 2.6rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--c-body-text);
   line-height: 1;
@@ -395,12 +397,14 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 1.2em 0;
 }
 .post-panel .post-content code {
+  font-family: var(--font-mono);
   background: var(--c-section-fill);
   padding: 1px 4px;
   border-radius: 2px;
   font-size: 0.88em;
 }
 .post-panel .post-content pre {
+  font-family: var(--font-mono);
   background: var(--c-section-fill);
   border: 1px solid var(--c-rule);
   padding: 1em;
@@ -787,12 +791,14 @@ img { max-width: 100%; height: auto; display: block; }
   font-style: italic;
 }
 .post-page__content code {
+  font-family: var(--font-mono);
   background: var(--c-section-fill);
   padding: 2px 5px;
   border-radius: 2px;
   font-size: 0.9em;
 }
 .post-page__content pre {
+  font-family: var(--font-mono);
   background: var(--c-section-fill);
   border: 1px solid var(--c-rule);
   padding: 1.2em;
@@ -801,6 +807,54 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 1.5em 0;
 }
 .post-page__content pre code { background: none; padding: 0; }
+
+/* ----------------------------------------------------------
+   Related posts — end of post-page, same-category match
+   ---------------------------------------------------------- */
+.related-posts {
+  margin-top: 2.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--c-rule);
+}
+.related-posts__title {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-muted);
+  margin: 0 0 0.8em;
+}
+.related-posts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.related-posts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+}
+.related-posts__link {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--c-body-text);
+  text-decoration: none;
+}
+.related-posts__link:hover { color: var(--c-accent); }
+.related-posts__date {
+  font-size: 0.7rem;
+  color: var(--c-muted);
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .related-posts__item { flex-direction: column; gap: 0.1em; }
+}
 
 /* ----------------------------------------------------------
    Prose pages — About, Privacy, Disclaimer
