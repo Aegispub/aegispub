@@ -118,13 +118,13 @@ Use the key (`newauthor`) as the `author:` value in post frontmatter.
 
 ---
 
-## DNS Cutover (Wix → GitHub Pages)
+## DNS Cutover (GitHub Pages)
 
 **Do this in order:**
 
 1. Ensure `CNAME` file exists in repository root containing `aegispub.com`
 2. Verify the site builds and is accessible at `https://aegispub.github.io` (this repo is named identically to the GitHub account, so GitHub treats it as the user/org page — served at the root `github.io` domain, not `username.github.io/reponame`)
-3. In Wix domain settings (or your registrar), update DNS:
+3. In your registrar domain settings, update DNS:
    - Add A records pointing to GitHub Pages IPs:
      ```
      185.199.108.153
@@ -132,10 +132,9 @@ Use the key (`newauthor`) as the `author:` value in post frontmatter.
      185.199.110.153
      185.199.111.153
      ```
-   - Remove the existing Wix A records
 4. In GitHub → Settings → Pages → Custom domain: enter `aegispub.com`
 5. GitHub Pages provisions SSL via Let's Encrypt automatically (up to 24h)
-6. DNS propagation: up to 48 hours — some visitors may see Wix during this window
+6. DNS propagation: up to 48 hours
 
 **Plan the cutover during a low-activity period.**
 
