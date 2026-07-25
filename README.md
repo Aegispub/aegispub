@@ -2,6 +2,12 @@
 
 Cybersecurity · Technology · Society
 
+**[aegispub.com](https://aegispub.com)** — independent writing on cybersecurity, technology, and their intersections with society.
+
+This repository is named identically to the `aegispub` GitHub account, so GitHub also renders this README as the account's public profile page (`github.com/aegispub`).
+
+---
+
 Static publication built with Jekyll, hosted on GitHub Pages. Deployed automatically on every push to `main`.
 
 ---
@@ -32,6 +38,7 @@ Site available at `http://localhost:4000`
 - Go to **Settings → Pages**
 - Source: **Deploy from a branch** → select `gh-pages` branch, `/ (root)`
 - The GitHub Actions workflow handles the build and push to `gh-pages` automatically
+- Note: Pages serves from `gh-pages`, not `main` — this README and everything else on `main` is never built into the live site, it only appears on the repo page and (because this repo shares its name with the account) the GitHub profile page
 
 ---
 
@@ -116,7 +123,7 @@ Use the key (`newauthor`) as the `author:` value in post frontmatter.
 **Do this in order:**
 
 1. Ensure `CNAME` file exists in repository root containing `aegispub.com`
-2. Verify the site builds and is accessible at `https://aegispub.github.io/aegispub` (or your github.io URL)
+2. Verify the site builds and is accessible at `https://aegispub.github.io` (this repo is named identically to the GitHub account, so GitHub treats it as the user/org page — served at the root `github.io` domain, not `username.github.io/reponame`)
 3. In Wix domain settings (or your registrar), update DNS:
    - Add A records pointing to GitHub Pages IPs:
      ```
@@ -187,7 +194,7 @@ _plugins/
 assets/
   css/main.css       Layout, grid, panel, responsive
   css/type.css       Typography scale
-  js/panel.js        Post panel interaction
+  js/panel.js        Post panel interaction (vanilla JS, no dependencies)
   fonts/             Self-hosted font files
   img/               Logo, OG image, post images
 
