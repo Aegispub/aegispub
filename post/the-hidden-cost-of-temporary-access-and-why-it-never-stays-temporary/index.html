@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="AegisPub. All rights reserved.">
+  <meta name="author" content="AegisPub">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>The Hidden Cost of “Temporary” Access — And Why It Never Stays Temporary | AegisPub</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="The Hidden Cost of “Temporary” Access — And Why It Never Stays Temporary" />
+<meta name="author" content="AegisPub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Forgotten access, not clever attacks, is behind many small-business security gaps. Why “temporary” permissions linger, and a simple habit that closes the door." />
+<meta name="twitter:description" property="og:description" content="Forgotten access, not clever attacks, is behind many small-business security gaps. Why “temporary” permissions linger, and a simple habit that closes the door." />
+<link rel="canonical" href="https://aegispub.com/post/the-hidden-cost-of-temporary-access-and-why-it-never-stays-temporary/" />
+<meta property="og:url" content="https://aegispub.com/post/the-hidden-cost-of-temporary-access-and-why-it-never-stays-temporary/" />
+<meta property="og:site_name" content="AegisPub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-09-14T00:00:00-04:00" />
+<meta property="article:modified_time" content="2026-09-14T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="The Hidden Cost of “Temporary” Access — And Why It Never Stays Temporary" />
+<meta name="twitter:site" content="@AegisPub" />
+<meta name="twitter:creator" content="@AegisPub" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AegisPub"},"dateModified":"2026-09-14T00:00:00-04:00","datePublished":"2026-09-14T00:00:00-04:00","description":"Forgotten access, not clever attacks, is behind many small-business security gaps. Why “temporary” permissions linger, and a simple habit that closes the door.","headline":"The Hidden Cost of “Temporary” Access — And Why It Never Stays Temporary","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegispub.com/post/the-hidden-cost-of-temporary-access-and-why-it-never-stays-temporary/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://aegispub.com/assets/img/og-default.png"},"name":"AegisPub"},"url":"https://aegispub.com/post/the-hidden-cost-of-temporary-access-and-why-it-never-stays-temporary/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/type.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="AegisPub RSS Feed" href="/feed.xml">
+
+  <!-- Post ID array for panel.js prev/next (injected per-layout when needed) -->
+  
+</head>
+<body>
+
+  <header class="masthead" role="banner">
+  <div class="page-wrap">
+    <a href="/" style="text-decoration:none;">
+      <img src="/assets/img/logo.png" alt="AegisPub" style="height:64px; width:auto; display:inline-block; vertical-align:center; margin-bottom:8px;">
+      
+      <div class="masthead__wordmark">AegisPub</div>
+      
+    </a>
+    <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
+    <div class="masthead__dateline" id="masthead-date"></div>
+  </div>
+</header>
+
+  <nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="/"
+         >Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/archive/"
+         >Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/about/"
+         >About</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main-content">
+    <div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      
+      <div class="post-page__category">Cybersecurity Insights</div>
+      
+      <h1 class="post-page__title">The Hidden Cost of “Temporary” Access — And Why It Never Stays Temporary</h1>
+      <div class="post-page__meta">
+        <time datetime="2026-09-14T00:00:00-04:00">September 14, 2026</time>
+        
+          · AegisPub
+        
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>If you’ve run a business for more than a couple of years, you’ve probably granted access to something “just for now.” A contractor needed to see a shared folder for a one-time project. An employee got broader permissions during a busy period, with a plan to scale them back later. A vendor was given login access to troubleshoot an issue.</p>
+
+<p>These decisions are small and reasonable in the moment. The trouble is, “temporary” access rarely gets removed on schedule, because removing access isn’t anyone’s job in the way granting it is. It just sits there, quietly, until either someone notices it during a rare cleanup — or until it becomes the reason something goes wrong.</p>
+
+<p>This is one of the most common, least dramatic ways small businesses develop security gaps. Not through a sophisticated attack, but through ordinary accumulation that nobody assigned anyone to clean up.</p>
+
+<h2 id="why-temporary-access-becomes-permanent">Why Temporary Access Becomes Permanent</h2>
+
+<p>Granting access is usually a fast, low-friction decision. Someone needs to see something, you click a few buttons, problem solved, you move on. Revoking access requires you to first remember that the access exists, then confirm it’s actually no longer needed, then take the action to remove it. That’s three steps where granting access only took one.</p>
+
+<p>Under normal day-to-day business pressure, the three-step process loses every time. The access stays in place, not because anyone decided it should, but because nobody decided it shouldn’t.</p>
+
+<p>Multiply this across years of business operations — every contractor, every former employee, every “just this once” exception — and you get an access landscape that’s grown well beyond what anyone can describe accurately. This is the same dynamic that plays out with enterprise firewall rules, where a clean set of twenty rules can grow into nine hundred over a few years through entirely reasonable individual decisions. Nobody intends to create a mess. It happens through accumulation, one small exception at a time.</p>
+
+<h2 id="the-real-risk-isnt-malice--its-forgetting">The Real Risk Isn’t Malice — It’s Forgetting</h2>
+
+<p>It’s tempting to think of security risk mainly in terms of bad actors: a hacker, a disgruntled former employee, a scammer. Those risks are real, but the more common risk is simpler and less dramatic: forgotten access becoming a vulnerability nobody is watching.</p>
+
+<p>A former employee’s account that was never formally disabled isn’t being actively misused by anyone — until it is, whether by the former employee themselves, or by someone who gains access to that old, unmonitored account through a data breach at another company where the password was reused.</p>
+
+<p>A vendor’s login from a project that ended two years ago isn’t dangerous on its own — until that vendor’s own systems are compromised, and the access they still hold to your systems becomes the way in.</p>
+
+<p>In both cases, the failure isn’t a clever attack defeating your defenses. It’s an old door nobody remembered to lock, sitting open long after anyone needed it open.</p>
+
+<h2 id="what-this-looks-like-in-practice">What This Looks Like in Practice</h2>
+
+<p>Picture a small business with eight employees over five years. In that time, three employees have left, two contractors completed short-term projects, and one vendor relationship ended. If access wasn’t actively, deliberately removed at each of those points, that’s potentially six sets of credentials still capable of reaching business systems, none of which anyone is actively monitoring.</p>
+
+<p>None of those six people may have any intention of misusing that access. But each one represents a door that should be locked and isn’t — and the business has no current way of knowing, without specifically checking, that the door is even still unlocked.</p>
+
+<p>This is the practical, ground-level version of a principle that applies at every scale of security: the most dangerous gaps are the ones nobody knows exist, because nobody is actively looking for them.</p>
+
+<h2 id="building-a-habit-that-actually-works">Building a Habit That Actually Works</h2>
+
+<p>The fix here doesn’t require new technology. It requires turning access review into a defined, recurring task rather than something that happens only when someone happens to remember.</p>
+
+<ol>
+  <li><strong>Tie access removal directly to departures.</strong> When an employee or contractor relationship ends, disabling their access should be a required step in that process — not a follow-up task that depends on someone remembering it later. Build it into your offboarding checklist, even if that checklist is just three lines in a document.</li>
+  <li><strong>Set expiration dates on temporary access from the start.</strong> When you grant access for a specific project or limited purpose, set a calendar reminder for when it should be reviewed or removed — at the moment you grant it, not as an afterthought.</li>
+  <li><strong>Run a quarterly access review.</strong> Once every three months, look at who has access to your key systems — email, financial software, shared drives, customer data — and confirm each person on the list still needs to be there. This doesn’t need to be elaborate. A simple spreadsheet review takes most small businesses under an hour.</li>
+  <li><strong>Make access removal the safe default.</strong> If you’re unsure whether someone still needs a given level of access, the safer choice is to remove it and grant it back quickly if it turns out they need it — not to leave it in place “just in case.”</li>
+  <li><strong>Document who approved what, and why.</strong> Even a simple note (“granted to contractor X for project Y, ending [date]”) makes future review dramatically faster, because you’re not trying to reconstruct the reasoning months or years later.</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>“Temporary” is one of the most dangerous words in business access management, not because temporary access is inherently risky, but because it so rarely gets treated as temporary in practice. The fix isn’t more security software. It’s a habit — a recurring, deliberate check on who has access to what, and why, before that access quietly becomes part of the permanent, unexamined landscape of your business.</p>
+
+<p>The businesses that handle this well aren’t the ones with the most sophisticated tools. They’re the ones that treat access review as a routine task, the same way they’d treat checking inventory or reconciling accounts. Make it routine, and most of this risk simply disappears.</p>
+
+    </div>
+
+    
+    
+    <nav class="related-posts" aria-label="Related posts">
+      <h2 class="related-posts__title">Related</h2>
+      <ul class="related-posts__list">
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-one-question-to-ask-before-buying-any-new-security-tool/">The One Question to Ask Before Buying Any New Security Tool</a>
+          <span class="related-posts__date">September 21, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-adding-more-security-tools-can-make-your-business-less-safe/">Why Adding More Security Tools Can Actually Make Your Business Less Safe</a>
+          <span class="related-posts__date">September 7, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-is-security-visibility-and-why-does-every-business-need-it/">What Is Security Visibility — And Why Does Every Business Need It?</a>
+          <span class="related-posts__date">August 3, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/beyond-antivirus-noticing-surviving-and-recovering-from-an-attack/">Beyond Antivirus: Building a Business That Can Notice, Survive, and Recover From an Attack</a>
+          <span class="related-posts__date">July 20, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/network-segmentation-101-why-a-flat-network-is-an-open-invitation/">Network Segmentation 101: Why a “Flat” Network Is an Open Invitation</a>
+          <span class="related-posts__date">July 13, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-is-assume-breach-and-why-small-businesses-should-think-this-way/">What Is “Assume Breach” — and Why Every Small Business Should Think This Way</a>
+          <span class="related-posts__date">July 6, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/emergency-patching-without-creating-new-vulnerabilities/">Emergency Patching Without Creating New Vulnerabilities: A Practical Guide</a>
+          <span class="related-posts__date">June 25, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-silent-security-failure/">The Silent Security Failure: How Your Defenses Can Stop Working Without Anyone Noticing</a>
+          <span class="related-posts__date">June 15, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-happens-when-your-security-system-fails/">What Happens When Your Security System Fails? The Question Every Business Should Be Asking</a>
+          <span class="related-posts__date">June 5, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/multi-factor-authentication-what-it-protects-against/">Multi-Factor Authentication: What It Protects Against — and What It Doesn't</a>
+          <span class="related-posts__date">May 27, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/least-privilege-access-why-every-business-needs-it/">Least Privilege Access: What It Is and Why Every Business Needs It</a>
+          <span class="related-posts__date">May 16, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/zero-trust-explained-security-shift/">Zero Trust Explained: The Security Shift Changing How Access Works</a>
+          <span class="related-posts__date">May 6, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/how-to-survive-a-cyberattack-you-couldnt-prevent/">How to Survive a Cyberattack You Couldn't Prevent</a>
+          <span class="related-posts__date">April 24, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/your-firewall-isnt-enough/">Your Firewall Isn't Enough</a>
+          <span class="related-posts__date">April 15, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-every-security-tool-has-gaps/">Why Every Security Tool Has Gaps</a>
+          <span class="related-posts__date">April 6, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-happens-after-a-security-incident/">What Happens After a Security Incident</a>
+          <span class="related-posts__date">March 24, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/key-organizations-within-our-digital-space/">Key Organizations Within Our Digital Space</a>
+          <span class="related-posts__date">March 16, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/vendor-you-trust-is-part-of-your-security/">The Vendor You Trust Is Part of Your Security</a>
+          <span class="related-posts__date">March 13, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/security-only-as-strong-as-weakest-point/">Security Is Only as Strong as Its Weakest Point</a>
+          <span class="related-posts__date">March 4, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/severity-scores-are-not-risk-scores/">Severity Scores Are Not Risk Scores</a>
+          <span class="related-posts__date">February 17, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/how-to-make-cyberattacks-not-worth-completing/">How to Make Cyberattacks Not Worth Completing</a>
+          <span class="related-posts__date">February 10, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-cybersecurity-is-an-economics-problem-not-a-technology-problem/">Cybersecurity Is an Economics Problem, Not Tech</a>
+          <span class="related-posts__date">February 3, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-are-we-secure-is-the-wrong-question/">Why 'Are We Secure?' Is the Wrong Question</a>
+          <span class="related-posts__date">January 5, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/navigating-the-complexities-of-the-digital-age-understanding-scams-and-how-to-protect-yourself/">Navigating the Digital Age: Understanding Scams</a>
+          <span class="related-posts__date">November 8, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-6/">The Multifaceted Nature of Scams PART 06</a>
+          <span class="related-posts__date">October 26, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-5/">The Multifaceted Nature of Scams PART 05</a>
+          <span class="related-posts__date">October 13, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-4/">The Multifaceted Nature of Scams PART 04</a>
+          <span class="related-posts__date">September 30, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-3/">The Multifaceted Nature of Scams PART 03</a>
+          <span class="related-posts__date">September 17, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-2/">The Multifaceted Nature of Scams PART 02</a>
+          <span class="related-posts__date">September 3, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-1/">The Multifaceted Nature of Scams PART 01</a>
+          <span class="related-posts__date">August 21, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/embracing-a-holistic-approach-to-cybersecurity/">Embracing a Holistic Approach to Cybersecurity</a>
+          <span class="related-posts__date">August 8, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-power-of-collaboration-in-cybersecurity/">The Power of Collaboration in Cybersecurity</a>
+          <span class="related-posts__date">July 26, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/imaginary-interview-with-an-ethical-hacker/">Imaginary Interview with an Ethical Hacker</a>
+          <span class="related-posts__date">July 13, 2025</span>
+        </li>
+        
+      </ul>
+    </nav>
+    
+
+  </article>
+</div>
+
+  </main>
+
+  <section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        
+          
+          <div class="colophon__author-name">AegisPub</div>
+          
+          <div class="colophon__author-bio">Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society.</div>
+          
+          <div class="colophon__author-links">
+            <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+            <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          </div>
+        
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="/disclaimer/">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="/privacy/">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:contactaegispub@gmail.com">contactaegispub@gmail.com</a>
+        </div>
+        <div class="colophon__social-links">
+          
+          <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          
+          
+          <a href="https://reddit.com/r/AegisPub" target="_blank" rel="noopener noreferrer">Reddit</a>
+          
+          
+          <a href="https://facebook.com/AegisPub" target="_blank" rel="noopener noreferrer">Facebook</a>
+          
+          
+          <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          
+          
+          <a href="https://instagram.com/AegisPub" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; 2026 AegisPub · <a href="/privacy/" style="color:inherit;">Privacy</a> · <a href="/disclaimer/" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+
+    <!-- Stats bar — below the flex row, full width -->
+    <div class="footer__stats">
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Live</span>
+          <span class="footer__stat-value" id="live-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="live-flags"></span>
+      </div>
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Visitors</span>
+          <span class="footer__stat-value" id="visitor-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="country-flags"></span>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- panel.js — deferred, does not block render -->
+  <script src="/assets/js/panel.js" defer></script>
+
+  <!-- Live dateline — always shows visitor's current date -->
+  <script>
+    (function () {
+      var el = document.getElementById('masthead-date');
+      if (!el) return;
+      var now = new Date();
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var months = ['January','February','March','April','May','June',
+                    'July','August','September','October','November','December'];
+      el.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] +
+                       ' ' + now.getDate() + ', ' + now.getFullYear();
+    }());
+  </script>
+
+  <!-- Visitor counter + live tracker -->
+  <script>
+    (function () {
+      var WORKER = 'https://counter.contactaegispub.workers.dev';
+
+      // Session token — new tab = new live session, refresh = same session
+      var token = sessionStorage.getItem('aegis_token');
+      if (!token) {
+        token = Math.random().toString(36).slice(2) + Date.now().toString(36);
+        sessionStorage.setItem('aegis_token', token);
+      }
+
+      // Track visit first
+    var collectPromise = (window.location.hostname !== 'localhost')
+      ? fetch(WORKER + '/collect', {
+          method: 'POST',
+          keepalive: true,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token: token })
+        }).catch(function () {})
+      : Promise.resolve();
+
+      // Helper — country code to emoji flag
+      function toFlag(code) {
+        if (!code || code.length !== 2) return '';
+        return code.toUpperCase().split('').map(function (c) {
+          return String.fromCodePoint(0x1F1E6 - 65 + c.charCodeAt(0));
+        }).join('');
+      }
+
+      // Fetch and display counts + flags
+      collectPromise
+      .then(function () {
+        return fetch(WORKER + '/count');
+      })
+      .then(function (r) {
+        return r.json();
+      })
+        .then(function (d) {
+
+          // Total visitor count
+          var visitEl = document.getElementById('visitor-count');
+          if (visitEl && typeof d.total === 'number') {
+            visitEl.textContent = d.total.toLocaleString();
+          }
+
+          // Live count
+          var liveEl = document.getElementById('live-count');
+          if (liveEl && typeof d.live === 'number') {
+            liveEl.textContent = d.live;
+          }
+
+          // Current visitor's flag below live count
+          var liveFlagEl = document.getElementById('live-flags');
+          if (liveFlagEl && d.current) {
+            liveFlagEl.textContent = toFlag(d.current);
+            liveFlagEl.title = d.current;
+          }
+
+          // All accumulated country flags below visitor count
+          var countryFlagEl = document.getElementById('country-flags');
+          if (countryFlagEl && Array.isArray(d.countries) && d.countries.length) {
+            countryFlagEl.textContent = d.countries.map(toFlag).join('');
+            countryFlagEl.title = d.countries.join(', ');
+          }
+
+        })
+        .catch(function () {});
+    }());
+  </script>
+
+</body>
+</html>

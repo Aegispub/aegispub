@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="AegisPub. All rights reserved.">
+  <meta name="author" content="AegisPub">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>What Is Security Visibility — And Why Does Every Business Need It? | AegisPub</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="What Is Security Visibility — And Why Does Every Business Need It?" />
+<meta name="author" content="AegisPub" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Security tools only protect what they can see. A practical look at the four things every business needs visibility into, and how small businesses can start." />
+<meta name="twitter:description" property="og:description" content="Security tools only protect what they can see. A practical look at the four things every business needs visibility into, and how small businesses can start." />
+<link rel="canonical" href="https://aegispub.com/post/what-is-security-visibility-and-why-does-every-business-need-it/" />
+<meta property="og:url" content="https://aegispub.com/post/what-is-security-visibility-and-why-does-every-business-need-it/" />
+<meta property="og:site_name" content="AegisPub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-03T00:00:00-04:00" />
+<meta property="article:modified_time" content="2026-08-03T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="What Is Security Visibility — And Why Does Every Business Need It?" />
+<meta name="twitter:site" content="@AegisPub" />
+<meta name="twitter:creator" content="@AegisPub" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AegisPub"},"dateModified":"2026-08-03T00:00:00-04:00","datePublished":"2026-08-03T00:00:00-04:00","description":"Security tools only protect what they can see. A practical look at the four things every business needs visibility into, and how small businesses can start.","headline":"What Is Security Visibility — And Why Does Every Business Need It?","mainEntityOfPage":{"@type":"WebPage","@id":"https://aegispub.com/post/what-is-security-visibility-and-why-does-every-business-need-it/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://aegispub.com/assets/img/og-default.png"},"name":"AegisPub"},"url":"https://aegispub.com/post/what-is-security-visibility-and-why-does-every-business-need-it/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/type.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="AegisPub RSS Feed" href="/feed.xml">
+
+  <!-- Post ID array for panel.js prev/next (injected per-layout when needed) -->
+  
+</head>
+<body>
+
+  <header class="masthead" role="banner">
+  <div class="page-wrap">
+    <a href="/" style="text-decoration:none;">
+      <img src="/assets/img/logo.png" alt="AegisPub" style="height:64px; width:auto; display:inline-block; vertical-align:center; margin-bottom:8px;">
+      
+      <div class="masthead__wordmark">AegisPub</div>
+      
+    </a>
+    <div class="masthead__tagline">Cybersecurity · Technology · Society</div>
+    <div class="masthead__dateline" id="masthead-date"></div>
+  </div>
+</header>
+
+  <nav class="nav-strip" aria-label="Main navigation">
+  <div class="page-wrap">
+    <div class="nav-strip__inner">
+      <a class="nav-strip__link"
+         href="/"
+         >Home</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/archive/"
+         >Archive</a>
+      <span class="nav-strip__sep" aria-hidden="true"> · </span>
+      <a class="nav-strip__link"
+         href="/about/"
+         >About</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main-content">
+    <div class="page-wrap">
+  <article class="post-page">
+
+    <header class="post-page__header">
+      
+      <div class="post-page__category">Cybersecurity Insights</div>
+      
+      <h1 class="post-page__title">What Is Security Visibility — And Why Does Every Business Need It?</h1>
+      <div class="post-page__meta">
+        <time datetime="2026-08-03T00:00:00-04:00">August 3, 2026</time>
+        
+          · AegisPub
+        
+      </div>
+    </header>
+
+    <div class="post-page__content">
+      <h2 id="introduction">Introduction</h2>
+
+<p>If someone asked whether your business was secure, you’d probably point to the things you’ve put in place: the firewall, the antivirus software, the password policies, perhaps a VPN. These are real protections, and having them matters.</p>
+
+<p>But there’s a prior question that most businesses never ask: do those protections actually cover everything they’re supposed to protect?</p>
+
+<p>This is the visibility problem. Security visibility means knowing what devices and services are in your environment, what they’re doing, and whether anything unusual is happening. Without it, even well-designed protections end up covering only part of the territory — and the parts they miss are exactly where security incidents tend to start.</p>
+
+<p>This guide explains what visibility means in practical terms, why it’s harder than it sounds, and what small businesses and non-technical users can do to build a clearer picture of their own environment.</p>
+
+<h2 id="why-out-of-sight-means-out-of-protection">Why “Out of Sight” Means “Out of Protection”</h2>
+
+<p>Every security tool works on the basis of what it can observe. A firewall can only block traffic it sees. An antivirus program can only scan files it’s given access to. A monitoring system can only generate alerts about activity it’s receiving data from.</p>
+
+<p>This creates a structural limitation: any part of the environment that isn’t visible to these tools is effectively unprotected by them. The tools continue to work exactly as designed. The problem is that what they’re designed to do doesn’t cover the territory that’s invisible to them.</p>
+
+<p>For a small business, invisible assets are more common than most owners realise. That old laptop running the point-of-sale system that’s been in the back office for five years. The WiFi router that a former employee set up for the warehouse and that nobody has reviewed since. The cloud storage account someone created with a personal email to share project files. Each of these is a real device or service that processes or stores business data, and each one might not appear on any list of systems that the business is actively monitoring.</p>
+
+<p>A device that isn’t on the list doesn’t get patched, doesn’t get monitored, and doesn’t benefit from any of the security controls the business has deployed. It exists in the real environment but is invisible to the protection systems built around it.</p>
+
+<h2 id="the-four-things-you-need-to-see">The Four Things You Need to See</h2>
+
+<p>Security visibility breaks down into four distinct areas, each of which has different failure modes:</p>
+
+<p><strong>What assets exist.</strong> This is the foundational question: what devices, systems, and services are connected to the network or handling business data? The answer is not static — it changes every time someone adds a device, signs up for a new cloud service, or connects personal equipment to the business WiFi. An asset list that was accurate six months ago has almost certainly drifted from reality since then.</p>
+
+<p><strong>What those assets are doing.</strong> Knowing a device exists is not the same as knowing what it’s doing. A server that processes customer data might be logging every access event, or it might be generating no logs at all. A device that’s being quietly misused — an account accessing files it shouldn’t, a system connecting to unusual external addresses — is only visible if it’s generating records of that activity and those records are being reviewed.</p>
+
+<p><strong>What’s happening between assets.</strong> Traffic flowing between devices inside the network — called east-west traffic — is invisible to most perimeter security tools. Firewalls that monitor what comes into and out of the network have no visibility into connections between devices already inside. This matters because when an attacker gains initial access, they typically spend most of their time moving between internal systems looking for valuable data. That entire process happens in the east-west traffic that perimeter controls don’t see.</p>
+
+<p><strong>Who is doing what.</strong> A log that says “a file was accessed” is useful. A log that says “this specific user account, on this specific device, at this specific time, accessed this file” is actionable. Identity attribution — connecting activity to specific accounts, and those accounts to specific people — is what makes it possible to understand whether activity is normal or suspicious, and to take targeted action in response.</p>
+
+<h2 id="why-the-asset-list-keeps-getting-stale">Why the Asset List Keeps Getting Stale</h2>
+
+<p>The most common reason security controls end up protecting incomplete territory is that the asset list they’re based on is never kept current.</p>
+
+<p>This isn’t usually a failure of intention. Organisations create asset inventories, intend to maintain them, and then get caught by the pace at which the environment changes. A developer spins up a cloud server for a project and forgets to decommission it when the project ends. An employee connects a personal device to the office network during a meeting. A vendor installs management software during a maintenance visit and nobody creates a record.</p>
+
+<p>Each of these creates a device in the environment that isn’t on the list. And because it isn’t on the list, it’s invisible to the monitoring and patching systems that depend on the list being accurate.</p>
+
+<p>The fix isn’t a more thorough initial inventory. It’s treating asset discovery as a continuous process rather than a one-time exercise. Even simple approaches work: a quarterly check of what devices have connected to the network, combined with a review of any cloud services that have been added, closes most of the gaps that accumulate between formal reviews.</p>
+
+<h2 id="what-small-businesses-can-do">What Small Businesses Can Do</h2>
+
+<p>Building security visibility doesn’t require enterprise-grade tooling. For small businesses, the most important steps are practical and achievable:</p>
+
+<ul>
+  <li><strong>Maintain a current device list.</strong> Write down every device that should be connected to the business network — computers, phones, tablets, printers, routers, smart devices — and review it at least quarterly. When you review it, compare it against what’s actually on the network. Your router’s connected devices list is often a good starting point for this comparison.</li>
+  <li><strong>Know your cloud services.</strong> List every cloud service that handles business data: email, file storage, accounting software, customer management, project tools. Assign an owner to each one — a person responsible for reviewing its settings, managing access, and ensuring it’s decommissioned when no longer needed.</li>
+  <li><strong>Separate your networks.</strong> Most modern routers support guest networks — a separate WiFi network for visitors and personal devices that doesn’t have access to business systems. Using this feature keeps business devices on their own network and reduces the exposure from devices you don’t control.</li>
+  <li><strong>Enable and review logs.</strong> Most routers and firewalls log connection events by default but with limited retention. Enabling extended logging and reviewing connection records periodically — even just monthly — surfaces unusual activity that would otherwise go unnoticed.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Security visibility isn’t about achieving perfect, comprehensive monitoring of everything simultaneously. It’s about honestly accounting for what you can see and what you can’t — and making deliberate choices about how to manage the gaps.</p>
+
+<p>The organisations that find their own blind spots, even imperfectly, are in a fundamentally better position than those that discover them through a security incident. The goal isn’t to eliminate gaps entirely. It’s to know where they are, manage the ones that matter most, and build the habit of actively looking for the ones that aren’t yet visible.</p>
+
+    </div>
+
+    
+    
+    <nav class="related-posts" aria-label="Related posts">
+      <h2 class="related-posts__title">Related</h2>
+      <ul class="related-posts__list">
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-one-question-to-ask-before-buying-any-new-security-tool/">The One Question to Ask Before Buying Any New Security Tool</a>
+          <span class="related-posts__date">September 21, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-hidden-cost-of-temporary-access-and-why-it-never-stays-temporary/">The Hidden Cost of “Temporary” Access — And Why It Never Stays Temporary</a>
+          <span class="related-posts__date">September 14, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-adding-more-security-tools-can-make-your-business-less-safe/">Why Adding More Security Tools Can Actually Make Your Business Less Safe</a>
+          <span class="related-posts__date">September 7, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/beyond-antivirus-noticing-surviving-and-recovering-from-an-attack/">Beyond Antivirus: Building a Business That Can Notice, Survive, and Recover From an Attack</a>
+          <span class="related-posts__date">July 20, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/network-segmentation-101-why-a-flat-network-is-an-open-invitation/">Network Segmentation 101: Why a “Flat” Network Is an Open Invitation</a>
+          <span class="related-posts__date">July 13, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-is-assume-breach-and-why-small-businesses-should-think-this-way/">What Is “Assume Breach” — and Why Every Small Business Should Think This Way</a>
+          <span class="related-posts__date">July 6, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/emergency-patching-without-creating-new-vulnerabilities/">Emergency Patching Without Creating New Vulnerabilities: A Practical Guide</a>
+          <span class="related-posts__date">June 25, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-silent-security-failure/">The Silent Security Failure: How Your Defenses Can Stop Working Without Anyone Noticing</a>
+          <span class="related-posts__date">June 15, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-happens-when-your-security-system-fails/">What Happens When Your Security System Fails? The Question Every Business Should Be Asking</a>
+          <span class="related-posts__date">June 5, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/multi-factor-authentication-what-it-protects-against/">Multi-Factor Authentication: What It Protects Against — and What It Doesn't</a>
+          <span class="related-posts__date">May 27, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/least-privilege-access-why-every-business-needs-it/">Least Privilege Access: What It Is and Why Every Business Needs It</a>
+          <span class="related-posts__date">May 16, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/zero-trust-explained-security-shift/">Zero Trust Explained: The Security Shift Changing How Access Works</a>
+          <span class="related-posts__date">May 6, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/how-to-survive-a-cyberattack-you-couldnt-prevent/">How to Survive a Cyberattack You Couldn't Prevent</a>
+          <span class="related-posts__date">April 24, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/your-firewall-isnt-enough/">Your Firewall Isn't Enough</a>
+          <span class="related-posts__date">April 15, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-every-security-tool-has-gaps/">Why Every Security Tool Has Gaps</a>
+          <span class="related-posts__date">April 6, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/what-happens-after-a-security-incident/">What Happens After a Security Incident</a>
+          <span class="related-posts__date">March 24, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/key-organizations-within-our-digital-space/">Key Organizations Within Our Digital Space</a>
+          <span class="related-posts__date">March 16, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/vendor-you-trust-is-part-of-your-security/">The Vendor You Trust Is Part of Your Security</a>
+          <span class="related-posts__date">March 13, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/security-only-as-strong-as-weakest-point/">Security Is Only as Strong as Its Weakest Point</a>
+          <span class="related-posts__date">March 4, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/severity-scores-are-not-risk-scores/">Severity Scores Are Not Risk Scores</a>
+          <span class="related-posts__date">February 17, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/how-to-make-cyberattacks-not-worth-completing/">How to Make Cyberattacks Not Worth Completing</a>
+          <span class="related-posts__date">February 10, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-cybersecurity-is-an-economics-problem-not-a-technology-problem/">Cybersecurity Is an Economics Problem, Not Tech</a>
+          <span class="related-posts__date">February 3, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/why-are-we-secure-is-the-wrong-question/">Why 'Are We Secure?' Is the Wrong Question</a>
+          <span class="related-posts__date">January 5, 2026</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/navigating-the-complexities-of-the-digital-age-understanding-scams-and-how-to-protect-yourself/">Navigating the Digital Age: Understanding Scams</a>
+          <span class="related-posts__date">November 8, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-6/">The Multifaceted Nature of Scams PART 06</a>
+          <span class="related-posts__date">October 26, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-5/">The Multifaceted Nature of Scams PART 05</a>
+          <span class="related-posts__date">October 13, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-4/">The Multifaceted Nature of Scams PART 04</a>
+          <span class="related-posts__date">September 30, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-3/">The Multifaceted Nature of Scams PART 03</a>
+          <span class="related-posts__date">September 17, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-2/">The Multifaceted Nature of Scams PART 02</a>
+          <span class="related-posts__date">September 3, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-multifaceted-nature-of-scams-part-1/">The Multifaceted Nature of Scams PART 01</a>
+          <span class="related-posts__date">August 21, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/embracing-a-holistic-approach-to-cybersecurity/">Embracing a Holistic Approach to Cybersecurity</a>
+          <span class="related-posts__date">August 8, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/the-power-of-collaboration-in-cybersecurity/">The Power of Collaboration in Cybersecurity</a>
+          <span class="related-posts__date">July 26, 2025</span>
+        </li>
+        
+        <li class="related-posts__item">
+          <a class="related-posts__link" href="/post/imaginary-interview-with-an-ethical-hacker/">Imaginary Interview with an Ethical Hacker</a>
+          <span class="related-posts__date">July 13, 2025</span>
+        </li>
+        
+      </ul>
+    </nav>
+    
+
+  </article>
+</div>
+
+  </main>
+
+  <section class="colophon" aria-label="Publication information">
+  <div class="page-wrap">
+    <div class="colophon__grid">
+
+      <!-- Authors -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Authors</div>
+        
+          
+          <div class="colophon__author-name">AegisPub</div>
+          
+          <div class="colophon__author-bio">Independent cybersecurity and technology publication covering digital security, emerging tech, and their intersections with society.</div>
+          
+          <div class="colophon__author-links">
+            <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+            <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          </div>
+        
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Disclaimer</div>
+        <p class="colophon__text">The content on AegisPub is for informational purposes only and does not constitute professional advice. Views are those of the authors.</p>
+        <a class="colophon__link" href="/disclaimer/">Read full disclaimer →</a>
+      </div>
+
+      <!-- Privacy -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Privacy</div>
+        <p class="colophon__text">We do not collect personal data. No cookies, no tracking, no analytics. This is a static publication.</p>
+        <a class="colophon__link" href="/privacy/">Read privacy policy →</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="colophon__col">
+        <div class="colophon__col-heading">Contact</div>
+        <div class="colophon__contact-email">
+          <a href="mailto:contactaegispub@gmail.com">contactaegispub@gmail.com</a>
+        </div>
+        <div class="colophon__social-links">
+          
+          <a href="https://medium.com/@AegisPub" target="_blank" rel="noopener noreferrer">Medium</a>
+          
+          
+          <a href="https://reddit.com/r/AegisPub" target="_blank" rel="noopener noreferrer">Reddit</a>
+          
+          
+          <a href="https://facebook.com/AegisPub" target="_blank" rel="noopener noreferrer">Facebook</a>
+          
+          
+          <a href="https://x.com/AegisPub" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          
+          
+          <a href="https://instagram.com/AegisPub" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" role="contentinfo">
+  <div class="page-wrap">
+
+    <div class="footer__inner">
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="footer__rss">
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+
+      <div class="footer__copy">
+        &copy; 2026 AegisPub · <a href="/privacy/" style="color:inherit;">Privacy</a> · <a href="/disclaimer/" style="color:inherit;">Disclaimer</a>
+      </div>
+
+    </div>
+
+    <!-- Stats bar — below the flex row, full width -->
+    <div class="footer__stats">
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Live</span>
+          <span class="footer__stat-value" id="live-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="live-flags"></span>
+      </div>
+
+      <div class="footer__stat">
+        <div class="footer__stat-top">
+          <span class="footer__stat-label">Visitors</span>
+          <span class="footer__stat-value" id="visitor-count">—</span>
+        </div>
+        <span class="footer__stat-flags" id="country-flags"></span>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- panel.js — deferred, does not block render -->
+  <script src="/assets/js/panel.js" defer></script>
+
+  <!-- Live dateline — always shows visitor's current date -->
+  <script>
+    (function () {
+      var el = document.getElementById('masthead-date');
+      if (!el) return;
+      var now = new Date();
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var months = ['January','February','March','April','May','June',
+                    'July','August','September','October','November','December'];
+      el.textContent = days[now.getDay()] + ', ' + months[now.getMonth()] +
+                       ' ' + now.getDate() + ', ' + now.getFullYear();
+    }());
+  </script>
+
+  <!-- Visitor counter + live tracker -->
+  <script>
+    (function () {
+      var WORKER = 'https://counter.contactaegispub.workers.dev';
+
+      // Session token — new tab = new live session, refresh = same session
+      var token = sessionStorage.getItem('aegis_token');
+      if (!token) {
+        token = Math.random().toString(36).slice(2) + Date.now().toString(36);
+        sessionStorage.setItem('aegis_token', token);
+      }
+
+      // Track visit first
+    var collectPromise = (window.location.hostname !== 'localhost')
+      ? fetch(WORKER + '/collect', {
+          method: 'POST',
+          keepalive: true,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token: token })
+        }).catch(function () {})
+      : Promise.resolve();
+
+      // Helper — country code to emoji flag
+      function toFlag(code) {
+        if (!code || code.length !== 2) return '';
+        return code.toUpperCase().split('').map(function (c) {
+          return String.fromCodePoint(0x1F1E6 - 65 + c.charCodeAt(0));
+        }).join('');
+      }
+
+      // Fetch and display counts + flags
+      collectPromise
+      .then(function () {
+        return fetch(WORKER + '/count');
+      })
+      .then(function (r) {
+        return r.json();
+      })
+        .then(function (d) {
+
+          // Total visitor count
+          var visitEl = document.getElementById('visitor-count');
+          if (visitEl && typeof d.total === 'number') {
+            visitEl.textContent = d.total.toLocaleString();
+          }
+
+          // Live count
+          var liveEl = document.getElementById('live-count');
+          if (liveEl && typeof d.live === 'number') {
+            liveEl.textContent = d.live;
+          }
+
+          // Current visitor's flag below live count
+          var liveFlagEl = document.getElementById('live-flags');
+          if (liveFlagEl && d.current) {
+            liveFlagEl.textContent = toFlag(d.current);
+            liveFlagEl.title = d.current;
+          }
+
+          // All accumulated country flags below visitor count
+          var countryFlagEl = document.getElementById('country-flags');
+          if (countryFlagEl && Array.isArray(d.countries) && d.countries.length) {
+            countryFlagEl.textContent = d.countries.map(toFlag).join('');
+            countryFlagEl.title = d.countries.join(', ');
+          }
+
+        })
+        .catch(function () {});
+    }());
+  </script>
+
+</body>
+</html>
