@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://aegispub.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aegispub.com/" rel="alternate" type="text/html" /><updated>2026-10-07T05:38:11-04:00</updated><id>https://aegispub.com/feed.xml</id><title type="html">AegisPub</title><subtitle>Independent cybersecurity and technology publication.</subtitle><author><name>AegisPub</name><email>contactaegispub@gmail.com</email></author><entry><title type="html">The Four Reasons People Bypass Security Controls — And the Design Fix for Each</title><link href="https://aegispub.com/post/the-four-reasons-people-bypass-security-controls-and-the-design-fix-for-each/" rel="alternate" type="text/html" title="The Four Reasons People Bypass Security Controls — And the Design Fix for Each" /><published>2026-10-03T00:00:00-04:00</published><updated>2026-10-03T00:00:00-04:00</updated><id>https://aegispub.com/post/the-four-reasons-people-bypass-security-controls-and-the-design-fix-for-each</id><content type="html" xml:base="https://aegispub.com/post/the-four-reasons-people-bypass-security-controls-and-the-design-fix-for-each/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://aegispub.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aegispub.com/" rel="alternate" type="text/html" /><updated>2026-10-07T05:42:59-04:00</updated><id>https://aegispub.com/feed.xml</id><title type="html">AegisPub</title><subtitle>Independent cybersecurity and technology publication.</subtitle><author><name>AegisPub</name><email>contactaegispub@gmail.com</email></author><entry><title type="html">Building a Security Culture That Lasts: Three Programs Every Organization Needs</title><link href="https://aegispub.com/post/building-a-security-culture-that-lasts-three-programs-every-organization-needs/" rel="alternate" type="text/html" title="Building a Security Culture That Lasts: Three Programs Every Organization Needs" /><published>2026-10-06T00:00:00-04:00</published><updated>2026-10-06T00:00:00-04:00</updated><id>https://aegispub.com/post/building-a-security-culture-that-lasts-three-programs-every-organization-needs</id><content type="html" xml:base="https://aegispub.com/post/building-a-security-culture-that-lasts-three-programs-every-organization-needs/"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>Security awareness training is not a security culture. It is a component of one. The distinction matters because organizations that mistake the training program for the culture tend to stop building at exactly the point where the real work begins.</p>
+
+<p>A security culture is the set of norms, habits, and relationships that shape how an organization responds to security challenges across the full range of situations it encounters — including the situations that no training module anticipated. Building it requires three structural elements working in parallel: an awareness program designed for behavioral change, a champion network that distributes security competency throughout the organization, and a recognition and reporting program that makes the right behaviors visible and valuable.</p>
+
+<p>None of these is complicated. All of them require sustained attention.</p>
+
+<h2 id="element-one-awareness-training-built-for-behavioral-change">Element One: Awareness Training Built for Behavioral Change</h2>
+
+<p>The purpose of security awareness training is behavioral change. Not knowledge transfer.</p>
+
+<p>This distinction has enormous practical consequences. Telling someone that phishing emails are dangerous does not reliably make them better at identifying phishing emails when they are reading their hundredth email of the day, under time pressure, with five meetings on the calendar. Knowledge does not translate automatically into behavior in high-stress, high-volume conditions.</p>
+
+<p>What produces behavioral change is repeated practice with immediate, specific feedback in conditions that approximate reality.</p>
+
+<p>This is why phishing simulations work better than phishing videos — but only when done correctly. A simulation that runs the same type of lure four times a year produces employees who are skilled at recognizing that one lure while remaining completely unprepared for others. A simulation program that varies lure categories — executive impersonation, IT helpdesk requests, delivery notifications, invoice approvals — produces broader vigilance.</p>
+
+<p>The feedback timing matters as much as the content. The training delivered at the moment an employee clicks a simulated phishing link is the most effective training they will receive. Not because it embarrasses them, but because it arrives at exactly the moment when their brain is processing why they made that decision.</p>
+
+<p><strong>Structuring training for new hires.</strong> The first week of employment is a poor time for detailed security content. New employees are absorbing an enormous amount of information simultaneously. Security content delivered in week one should focus on context — what the organization protects and why it matters — not rules and restrictions. In the first month, training should be grounded in the new employee’s actual role. By the end of the first quarter, they should have encountered a simulation, received specific feedback, and had the opportunity to ask questions based on real experience rather than hypothetical scenarios.</p>
+
+<h2 id="element-two-security-champions--distributed-competency">Element Two: Security Champions — Distributed Competency</h2>
+
+<p>The challenge with centralized security teams is that they are remote from the daily operational realities of most departments. A policy communicated by someone who has never attended a client meeting looks different from the same policy explained by a peer who was in the last three.</p>
+
+<p>A security champion program addresses this by creating a network of security-aware people throughout the organization: individuals in non-security roles who receive additional training, stay current on emerging threats, and serve as the first point of contact for security questions and concerns in their department.</p>
+
+<p><strong>Selecting champions correctly.</strong> Champions are most effective when they self-select based on genuine interest, not when they are appointed because someone needed to send a body to security training. The right candidate is already asking security questions informally. Look for curiosity, not compliance.</p>
+
+<p><strong>Sustaining the program.</strong> Champions who receive no follow-up after their initial training drift away from the role within six months. Regular briefings — ideally monthly or biweekly — that share relevant intelligence keep champions current and make them feel like part of the security program rather than volunteers being used for overhead.</p>
+
+<h2 id="element-three-recognition-and-reporting--making-right-behaviors-visible">Element Three: Recognition and Reporting — Making Right Behaviors Visible</h2>
+
+<p>Most organizations have an incentive structure that inadvertently suppresses security reporting. Security failures get attention and consequences. Security successes — the reported phishing email, the flagged suspicious request — are invisible. The employee who is not sure whether something is suspicious and stays quiet faces no consequence for the silence.</p>
+
+<p>Inverting this structure requires a recognition program that makes the right behaviors visible and valued — and a reporting feedback loop that makes reporting feel like a two-way interaction rather than a one-way action.</p>
+
+<p><strong>Recognition that works.</strong> The most effective recognition is specific, immediate, and frequent — not a general annual award, but a specific acknowledgment shortly after the behavior. Frequency matters more than ceremony.</p>
+
+<p><strong>The reporting feedback loop.</strong> Every reported suspicious email should generate an acknowledgment within fifteen minutes of submission — not a resolution, just confirmation that the report was received and is being reviewed. Within twenty-four hours, the reporter should receive a response explaining what the email was and why the verdict was what it was.</p>
+
+<h2 id="when-the-program-is-not-working-diagnosing-honestly">When the Program Is Not Working: Diagnosing Honestly</h2>
+
+<p>Three persistent failure patterns signal that the program needs redesign rather than intensification.</p>
+
+<p><strong>Stagnant phishing simulation click rates.</strong> A click rate that does not improve despite repeated simulations and training usually indicates that the simulation program is testing a narrow range of attack types. Expand the lure variety and analyze results by category rather than as a blended rate.</p>
+
+<p><strong>Reports that go unacknowledged.</strong> If employees report suspicious emails and receive no response, they stop reporting. Automated acknowledgment within fifteen minutes and verdict feedback within twenty-four hours are the minimum feedback loop needed to sustain reporting behavior.</p>
+
+<p><strong>Senior leaders who refuse training.</strong> This is a governance signal, not just a compliance problem. The training may genuinely be misaligned with their risk profile. The solution is a curriculum redesigned for their actual risk, not enforced participation in training that does not apply to them.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>A security culture that lasts is not built on annual training videos and signed policy acknowledgments. It is built on the sustained interaction of three elements: a training program that changes behavior rather than transferring knowledge, a champion network that brings security competency into every department, and a recognition and reporting system that makes security behaviors visible and valued.</p>
+
+<p>Building them takes time and sustained attention. It also produces something that no policy can: an organization where security works because people want it to, not because they are required to.</p>]]></content><author><name>AegisPub</name></author><category term="Technology &amp; Society" /><summary type="html"><![CDATA[Awareness training is a component of security culture, not the whole of it. Behavior-change training, a champion network, and a recognition and reporting loop are the three structural elements.]]></summary></entry><entry><title type="html">The Four Reasons People Bypass Security Controls — And the Design Fix for Each</title><link href="https://aegispub.com/post/the-four-reasons-people-bypass-security-controls-and-the-design-fix-for-each/" rel="alternate" type="text/html" title="The Four Reasons People Bypass Security Controls — And the Design Fix for Each" /><published>2026-10-03T00:00:00-04:00</published><updated>2026-10-03T00:00:00-04:00</updated><id>https://aegispub.com/post/the-four-reasons-people-bypass-security-controls-and-the-design-fix-for-each</id><content type="html" xml:base="https://aegispub.com/post/the-four-reasons-people-bypass-security-controls-and-the-design-fix-for-each/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>When an employee bypasses a security control, the standard organizational response is to communicate the policy again, add a training module, or escalate to disciplinary review. These responses share a common assumption: that the problem is the employee’s knowledge or attitude.</p>
 
@@ -537,69 +593,4 @@
 
 <p>Prevention will always be part of a sensible security approach — but it’s only part of it. The businesses that handle security incidents well aren’t always the ones with the most expensive tools. Often, they’re the ones that asked a few uncomfortable questions in advance: how would we notice, how would we recover, and what do we do first.</p>
 
-<p>A few inexpensive tripwires, a backup setup that’s actually separated and tested, and a one-page plan written on a calm afternoon — together, these don’t prevent every bad day. But they’re often the entire difference between a bad day that stays a bad day, and one that becomes the story that defines a business for years afterward.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[Prevention is only half the plan. Tripwires, backups that attackers cannot delete, and a one-page response plan decide how bad a bad day gets.]]></summary></entry><entry><title type="html">Network Segmentation 101: Why a “Flat” Network Is an Open Invitation</title><link href="https://aegispub.com/post/network-segmentation-101-why-a-flat-network-is-an-open-invitation/" rel="alternate" type="text/html" title="Network Segmentation 101: Why a “Flat” Network Is an Open Invitation" /><published>2026-07-13T00:00:00-04:00</published><updated>2026-07-13T00:00:00-04:00</updated><id>https://aegispub.com/post/network-segmentation-101-why-a-flat-network-is-an-open-invitation</id><content type="html" xml:base="https://aegispub.com/post/network-segmentation-101-why-a-flat-network-is-an-open-invitation/"><![CDATA[<h2 id="introduction">Introduction</h2>
-
-<p>If you asked most small business owners to draw a map of their computer network, you’d probably get a blank look — and that’s completely understandable. Networks are invisible. As long as everything works — the till connects to the card reader, the office Wi-Fi reaches every desk, the shared drive opens on every computer — there’s no obvious reason to think about how it’s all connected underneath.</p>
-
-<p>But “everything can reach everything” is exactly the setup that makes a single infected computer into a business-wide problem. This article explains what that looks like, why it happens by default, and how to fix it — without needing to become a network engineer.</p>
-
-<h2 id="what-a-flat-network-actually-means">What a “Flat Network” Actually Means</h2>
-
-<p>Picture an office building where every employee has a master key. The cleaner, the receptionist, the new intern, and the finance director all carry a key that opens every door — the supply closet, the server room, the safe, HR’s filing cabinets.</p>
-
-<p>Most days, this causes no problems at all. Nobody’s trying to get into the safe who shouldn’t be. The master keys just sit in pockets, unused for anything they shouldn’t be used for.</p>
-
-<p>But if one of those keys gets copied — lost, stolen, or borrowed by someone with bad intentions — suddenly every door in the building is open to them. The convenience that caused no problems on a normal day becomes the reason a small problem turns into a big one.</p>
-
-<p>A “flat” computer network works the same way. Every device — every laptop, every till, every shared printer, every server — can communicate with every other device, with nothing in between checking whether that communication makes sense. The receptionist’s computer can, technically, reach the same systems as the one that processes payroll. A guest’s phone on the office Wi-Fi might be able to see the same shared drive as the accounting team.</p>
-
-<p>This isn’t usually a deliberate choice. It’s just the default. Setting up a network so that everything can talk to everything else is the easiest way to make sure everything works — and “make sure everything works” is usually the only goal anyone had in mind when the network was first set up.</p>
-
-<h2 id="why-this-becomes-a-problem">Why This Becomes a Problem</h2>
-
-<p>The issue isn’t that a flat network is insecure on a normal day. It’s what happens on an abnormal one.</p>
-
-<p>Suppose an employee’s laptop gets infected — maybe through a phishing email, maybe through a malicious attachment, maybe through a website that wasn’t what it appeared to be. This kind of thing happens to organizations of every size, regularly, despite training and antivirus software. It’s one of the most common starting points for a security incident.</p>
-
-<p>In a flat network, that one infected laptop isn’t just a problem. It’s a gateway. From that laptop, whatever has compromised it can often look around the network and find other devices to connect to — the file server holding customer records, the computer that handles payments, the backup system, other employees’ machines.</p>
-
-<p>This process is sometimes called “lateral movement,” and it sounds like it requires advanced skills. In a flat network, it largely doesn’t. If nothing is stopping a device from connecting to another device, then connecting isn’t the hard part — it’s just what happens by default. The “attack” is mostly just… using the network the way it was built to be used, except by someone who shouldn’t be there.</p>
-
-<p>This is why a single phishing email, opened by a single employee, can sometimes lead to an entire business’s customer data being exposed, or every computer on the network being locked by ransomware. The infection started in one place. The network did the rest of the work, by design.</p>
-
-<h2 id="the-fix-segmentation">The Fix: Segmentation</h2>
-
-<p>The solution mirrors the physical-world fix for the master-key problem: instead of one key that opens everything, different keys for different areas, based on what’s inside them and who actually needs to get in.</p>
-
-<p>In networking terms, this is called segmentation — dividing a network into separate zones based on what they contain and how sensitive that is, with rules controlling what’s allowed to cross between zones.</p>
-
-<p>A reasonably segmented small business network might look something like this:</p>
-
-<ul>
-  <li><strong>Staff workstations</strong> — everyday computers used for email, documents, and general work</li>
-  <li><strong>Payment systems</strong> — tills, card readers, and anything that touches customer payment information</li>
-  <li><strong>Servers and shared storage</strong> — where customer records, financial data, and shared files actually live</li>
-  <li><strong>Backup systems</strong> — kept separate, with their own access credentials</li>
-  <li><strong>Guest and IoT devices</strong> — guest Wi-Fi, smart TVs, smart thermostats, security cameras, and similar devices</li>
-</ul>
-
-<p>The goal is that each of these areas can only talk to the others in ways that are actually necessary — and nothing else. Staff workstations might need to reach the file server, but they don’t need to directly reach the payment systems. Guest Wi-Fi might need internet access, but it has no business reaching anything else on the network at all.</p>
-
-<p>With this setup, if a staff laptop gets infected, the damage is contained to what that laptop can legitimately reach — which, with good segmentation, is a small slice of the business rather than all of it.</p>
-
-<h2 id="what-this-looks-like-for-a-small-business">What This Looks Like for a Small Business</h2>
-
-<p>Segmentation sounds like something only large organizations with dedicated IT departments can do, but meaningful versions of it are within reach for almost any business:</p>
-
-<ul>
-  <li><strong>Separate Wi-Fi networks.</strong> Most modern routers and access points support multiple Wi-Fi networks (sometimes called VLANs or guest networks) at no extra cost. Put guest devices, smart devices, and point-of-sale systems on networks separate from the computers handling sensitive business data.</li>
-  <li><strong>Different credentials for different systems.</strong> Even without changing the network layout, making sure backups and core systems use different logins than everyday accounts limits how far a single stolen password can reach.</li>
-  <li><strong>Ask your IT provider one specific question.</strong> “If [a specific device — say, the front desk computer] got infected, what else on our network could it reach?” This question often reveals gaps that are easy to close once they’re visible, and hard to notice otherwise.</li>
-  <li><strong>Prioritize your most sensitive systems first.</strong> You don’t need to segment everything at once. Start with whatever holds your most sensitive data — customer records, financial systems, backups — and make sure those are isolated from everyday devices, even if other parts of the network stay more open for now.</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>A flat network isn’t a sign that a business has done anything wrong. It’s simply the default — the path of least resistance when the only goal during setup was “make sure everything connects.” But it means that the security of your entire business can come down to the security of its single weakest device, because nothing stops a problem on one machine from becoming a problem everywhere.</p>
-
-<p>Segmentation doesn’t make a network unbreakable. What it does is make sure that if — or when — something does go wrong on one device, it stays a problem with that device, rather than becoming a problem with everything your business depends on. For a relatively small amount of setup work, that’s one of the highest-value changes a business can make to how it’s protected.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[When every device can reach every other device, one infected laptop becomes a business-wide problem. Here is what segmentation means and how a small business can start.]]></summary></entry></feed>
+<p>A few inexpensive tripwires, a backup setup that’s actually separated and tested, and a one-page plan written on a calm afternoon — together, these don’t prevent every bad day. But they’re often the entire difference between a bad day that stays a bad day, and one that becomes the story that defines a business for years afterward.</p>]]></content><author><name>AegisPub</name></author><category term="Cybersecurity Insights" /><summary type="html"><![CDATA[Prevention is only half the plan. Tripwires, backups that attackers cannot delete, and a one-page response plan decide how bad a bad day gets.]]></summary></entry></feed>
