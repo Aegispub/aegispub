@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Building a Security Culture That Lasts: Three Programs Every Organization Needs"
-date:     2026-10-26
+date:     2026-10-06
 category: Technology & Society
 excerpt:  "Awareness training is a component of security culture, not the whole of it. Behavior-change training, a champion network, and a recognition and reporting loop are the three structural elements."
 author:   aegispub
